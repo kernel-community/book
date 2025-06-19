@@ -113,7 +113,7 @@ function FlipCard({ module }: { module: Module }) {
 
   return (
     <div className="flip-card w-full">
-      <div className={`flip-card-inner relative ${flipped ? 'flipped' : ''}`}> 
+      <div className={`flip-card-inner relative ${flipped ? 'flipped' : ''}`}>
         <div className="flip-card-front bg-white rounded-md shadow-xl border-gray-200/50 border-2">
           <button
             onClick={() => setFlipped(true)}
@@ -165,7 +165,7 @@ function FlipCard({ module }: { module: Module }) {
 
 export default function FlipCardGrid() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-4 gap-2 sm:gap-4 mx-auto w-full sm:w-3/4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 mx-auto w-full sm:w-3/4">
       {modules.map((m, idx) => (
         <FlipCard key={idx} module={m} />
       ))}
