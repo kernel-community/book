@@ -113,7 +113,7 @@ const FirstFold = () => {
             </div>
           </div>
           <div className="text-lg mt-6">
-            Kernel is a peer-to-peer learning environment.  
+            Kernel is a peer-to-peer learning environment.
           </div>
           <div className="text-lg mt-6">
             We teach, we learn. We listen, create, support, and care. Together, we are planting the seeds required to grow connected systems we hope our descendants will enjoy.
@@ -204,7 +204,7 @@ const SecondFold = () => {
       <div className={`sm:text-4xl text-3xl z-10 mt-20 ${miriam.className}`}>
         Meet the Kernel Fellows
       </div>
-      <div className="w-full sm:w-3/5 h-full grow overflow-hidden mt-12 z-10 mb-14">
+      <div className="w-full h-full grow overflow-hidden mt-12 z-10 mb-14">
         <div className="gap-6 sm:gap-16 grid grid-rows-2 grid-flow-col w-full h-full overflow-x-auto overflow-y-hidden">
           <Fellows />
         </div>
