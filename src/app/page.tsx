@@ -8,14 +8,8 @@ import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
 import FlipCardGrid from "@/components/Cards";
 import { ReactElement } from "react";
-import { Miriam_Libre } from 'next/font/google'
 import { MoveRight } from 'lucide-react';
-
-const miriam = Miriam_Libre({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '700']
-})
+import { miriam } from '@/lib/fonts';
 
 const KernelPlantComponent = () => {
   return (
@@ -301,7 +295,7 @@ const FourthFold = () => {
 const FifthFold = () => {
   return (
     <div className={`w-full flex flex-col items-center p-3`}>
-      <div className="sm:text-4xl text-3xl font-medium">
+      <div className={`sm:text-4xl text-3xl font-medium ${miriam.className}`}>
         Explore the Kernel Book
       </div>
       <div className="sm:text-xl sm:w-[990px] text-base w-full text-center mb-12 mt-6">
