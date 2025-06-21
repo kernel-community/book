@@ -102,20 +102,9 @@ export default function Brandkit() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <BrandAsset
-            title="Primary Logo"
-            description="The main Kernel logo for light backgrounds"
-            downloadUrl="/logo.png"
+            title="Logos"
+            description="All Kernel logos and icons in PNG and SVG formats"
           />
-
-          {/* <BrandAsset
-            title="Logo (Dark)"
-            description="Kernel logo optimized for dark backgrounds"
-          /> */}
-
-          {/* <BrandAsset
-            title="Icon Only"
-            description="Standalone Kernel icon without text"
-          /> */}
 
           <BrandAsset
             title="Color Palette"
@@ -133,9 +122,10 @@ export default function Brandkit() {
           /> */}
         </div>
 
-        <div id="primary-logo" className="bg-white border-2 border-gray-200 rounded-lg p-8">
-          <h2 className={`${miriam.className} text-3xl mb-6`}>Primary Logo</h2>
-          <div className="text-center">
+        <div id="logos" className="bg-white border-2 border-gray-200 rounded-lg p-8">
+          <h2 className={`${miriam.className} text-3xl mb-6`}>Logos</h2>
+
+          <div className="text-center mb-8">
             <div className="bg-gray-50 rounded-lg p-8 mb-6 inline-block">
               <div className="w-48">
                 <Logo />
@@ -146,14 +136,100 @@ export default function Brandkit() {
             </p>
             <a
               href="/logo.png"
-              className="bg-[#4B5B33] text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:bg-opacity-90 transition-all mb-8"
+              className="bg-[#4B5B33] text-white px-6 py-3 rounded-full inline-flex items-center gap-2 hover:bg-opacity-90 transition-all"
               download
             >
-              Download Logo <MoveRight />
+              Download Primary Logo <MoveRight />
             </a>
           </div>
 
-          <div className="bg-[#F9F9F9] rounded-lg p-6 mt-6">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="text-center">
+              <div className="bg-gray-50 rounded-lg p-8 mb-4">
+                <Image
+                  src="/logos/KernelLogo.png"
+                  alt="Kernel Logo PNG"
+                  width={200}
+                  height={80}
+                  className="mx-auto"
+                />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Logo PNG</h3>
+              <p className="text-gray-600 mb-4">High-resolution PNG format logo</p>
+              <a
+                href="/logos/KernelLogo.png"
+                className="bg-[#4B5B33] text-white px-4 py-2 rounded-full inline-flex items-center gap-2 hover:bg-opacity-90 transition-all"
+                download
+              >
+                Download PNG <MoveRight size={16} />
+              </a>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gray-50 rounded-lg p-8 mb-4">
+                <Image
+                  src="/logos/KernelLogo.svg"
+                  alt="Kernel Logo SVG"
+                  width={200}
+                  height={80}
+                  className="mx-auto"
+                />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Logo SVG</h3>
+              <p className="text-gray-600 mb-4">Scalable vector format logo</p>
+              <a
+                href="/logos/KernelLogo.svg"
+                className="bg-[#4B5B33] text-white px-4 py-2 rounded-full inline-flex items-center gap-2 hover:bg-opacity-90 transition-all"
+                download
+              >
+                Download SVG <MoveRight size={16} />
+              </a>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gray-50 rounded-lg p-8 mb-4">
+                <Image
+                  src="/logos/KernelIcon.png"
+                  alt="Kernel Icon PNG"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Icon PNG</h3>
+              <p className="text-gray-600 mb-4">High-resolution PNG format icon</p>
+              <a
+                href="/logos/KernelIcon.png"
+                className="bg-[#4B5B33] text-white px-4 py-2 rounded-full inline-flex items-center gap-2 hover:bg-opacity-90 transition-all"
+                download
+              >
+                Download PNG <MoveRight size={16} />
+              </a>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gray-50 rounded-lg p-8 mb-4">
+                <Image
+                  src="/logos/KernelIcon.svg"
+                  alt="Kernel Icon SVG"
+                  width={80}
+                  height={80}
+                  className="mx-auto"
+                />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Icon SVG</h3>
+              <p className="text-gray-600 mb-4">Scalable vector format icon</p>
+              <a
+                href="/logos/KernelIcon.svg"
+                className="bg-[#4B5B33] text-white px-4 py-2 rounded-full inline-flex items-center gap-2 hover:bg-opacity-90 transition-all"
+                download
+              >
+                Download SVG <MoveRight size={16} />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-[#F9F9F9] rounded-lg p-6">
             <h3 className={`${miriam.className} text-xl mb-4 font-bold`}>Logo Usage Guidelines</h3>
             <ul className="space-y-2 text-gray-700">
               <li>• Maintain clear space around the logo</li>
@@ -209,6 +285,7 @@ export default function Brandkit() {
             </div>
           </div>
         </div>
+
 
 
         <div id="typography" className="bg-white border-2 border-gray-200 rounded-lg p-8 mt-8">
