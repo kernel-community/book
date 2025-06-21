@@ -6,7 +6,7 @@ const baseUrl = self
 
 const getImage = (name: string, dir: "fellows" | "projects" = "fellows") => {
   return (
-    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" style={{ objectFit: "cover", objectPosition: "center" }} unoptimized fill className="rounded-lg"></Image>
+    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" style={{ objectFit: "contain", objectPosition: "center" }} unoptimized fill className="rounded-lg"></Image>
   )
 }
 
@@ -33,22 +33,22 @@ export type Project = {
 
 export const projects: Array<Project> = [
   {
-    name: 'Pods Finance',
-    fellowName: 'Rafaella Baraldo',
-    description: 'The fastest way to offer crypto backed loans. ',
-    tag1: 'Defi',
+    name: 'Commit',
+    fellowName: 'Rev Miller',
+    description: 'Programmable accountability.',
+    tag1: 'social',
     tag2: null,
-    url: 'https://www.pods.finance/',
-    projectImage: getImage("pods.jpeg", "projects"),
+    url: 'https://www.commit.wtf/',
+    projectImage: getImage("commit.svg", "projects"),
   },
-  {
-    name: 'Push',
-    fellowName: 'Harsh Rajat & Richa Joshi',
-    description: 'The communication protocol of web3.',
-    tag1: 'Communications',
-    tag2: null,
-    url: 'https://push.org/',
-    projectImage: getImage("push.jpeg", "projects"),
+    {
+    name: 'Plastic Labs',
+    fellowName: 'Vince Trost & Courtland Leer',
+    description: 'Plastic Labs is a research-driven company building at the intersection of human and machine cognition.',
+    tag1: 'ai',
+    tag2: '',
+    url: 'https://plasticlabs.ai/',
+    projectImage: getImage("plastic.png", "projects"),
   },
   {
     name: 'Coinshift',
@@ -86,15 +86,7 @@ export const projects: Array<Project> = [
     url: 'https://toucan.earth/',
     projectImage: getImage("toucan.jpeg", "projects"),
   },
-  {
-    name: 'Bonfire',
-    fellowName: 'Melissa Zhang, Matt Alston',
-    description: 'Bringing creators and brands closer to their biggest fans.',
-    tag1: 'Token Communities',
-    tag2: 'Creators',
-    url: 'https://www.bonfire.xyz/',
-    projectImage: getImage("bonfire.jpeg", "projects"),
-  },
+
   {
     name: 'LiFi',
     fellowName: 'Philipp Zentner',
@@ -157,7 +149,7 @@ export const fellows: Array<Fellow> = [
     position: "Founder, Mouthpiece",
     tag1: "builder",
     tag2: "creative",
-    image: getImage('jess-sun.png'),
+    image: getImage('jess-sun.jpeg'),
     url: "https://jess-sun.com",
     block: 7
   },

@@ -323,7 +323,8 @@ const Footer = () => {
       </Button>
       <div className="w-full">
         <div className="text-center font-medium text-l sm:text-2xl mt-10 mb-8">Supporters</div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto items-center">
+        {/* <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto items-center center"> */}
+        <div className="flex flex-wrap justify-center gap-12 max-w-3xl mx-auto items-center">
           <a href="https://anoma.net/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
             <Image src={Anoma} style={{ objectFit: "contain" }} height={50} width={80} alt="Anoma" unoptimized />
           </a>

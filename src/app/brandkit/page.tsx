@@ -170,7 +170,7 @@ export default function Brandkit() {
             <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-all duration-200 relative" onClick={() => copyToClipboard('#4B5B33')}>
               <div className="w-24 h-24 bg-[#4B5B33] rounded-lg mx-auto mb-3 shadow-md hover:shadow-lg"></div>
               <span className="block font-mono text-lg font-semibold">#4B5B33</span>
-              <span className="text-gray-600">Primary Green</span>
+              <span className="text-gray-600">Primary Glade</span>
               {copiedColor === '#4B5B33' && (
                 <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-2 py-1 rounded text-sm opacity-0 animate-fade-in">
                   Copied!
