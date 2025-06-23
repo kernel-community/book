@@ -44,7 +44,7 @@ export const projects: Array<Project> = [
     {
     name: 'Plastic Labs',
     fellowName: 'Vince Trost & Courtland Leer',
-    description: 'Plastic Labs is a research-driven company building at the intersection of human and machine cognition.',
+    description: 'A research-driven company building at the intersection of human and machine cognition.',
     tag1: 'ai',
     tag2: '',
     url: 'https://plasticlabs.ai/',
@@ -94,7 +94,7 @@ export const projects: Array<Project> = [
     tag1: 'Interoperability',
     tag2: 'Exchanges',
     url: 'https://li.fi/',
-    projectImage: getImage("lifi.jpeg", "projects"),
+    projectImage: getImage("lifi.png", "projects"),
   },
   {
     name: 'Jokerace',
@@ -124,12 +124,12 @@ export const projects: Array<Project> = [
     projectImage: getImage("fp.jpeg", "projects"),
   },
   {
-    name: 'DLogos',
+    name: 'dLogos',
     fellowName: 'Anonymous',
     description: 'Participate in the world\'s most valuable conversations.',
     tag1: 'Dialogues',
     tag2: 'Markets',
-    url: 'https://testnet.dlogos.xyz/',
+    url: 'https://www.dlogos.xyz/',
     projectImage: getImage("dlogos.jpeg", "projects"),
   },
 ]
@@ -335,7 +335,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Nikhil Raghuveera",
-    position: "Co-founder, Aethos",
+    position: "Co-founder, Predicate",
     tag1: "builder",
     tag2: "creative",
     image: getImage('nikhil.jpeg'),
