@@ -145,6 +145,71 @@ export const fellows: Array<Fellow> = [
     block: 5
   },
   {
+    // Liz Kukka, Co-founder & CEO, Lane3
+    name: "Liz Kukka",
+    position: "Co-founder & CEO, Lane3",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('liz.jpg'),
+    url: "",
+    block: 5
+  },
+  {
+    // Julia Wu, Co-founder, Spark AI
+    name: "Julia Wu",
+    position: "Co-founder, Spark AI",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('julia-wu.jpg'),
+    url: "",
+    block: 5
+  },
+  {
+    name: "John Hoopes",
+    position: "Founder, Astral Protocol",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('john2.jpg'),
+    url: null,
+    block: 5
+  },
+  {
+    name: "Alanah Lam",
+    position: "Lead Designer, Future Primitive",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('alanah.jpeg'),
+    url: null,
+    block: 5
+  },
+  {
+    name: "Benny Giang",
+    position: "Co-founder, Future Primitive",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('benny.jpg'),
+    url: null,
+    block: 5
+  },
+  {
+    name: "Sophia Rokhlin",
+    position: "Community, Ma Earth",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('Sophia.jpg'),
+    url: null,
+    block: 5
+  },
+  {
+    name: "Akasha Stallworth",
+    position: "Founder, Concordance",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('akasha.jpg'),
+    url: null,
+    block: 5
+  },
+  {
     name: "Jess Sun",
     position: "Founder, Mouthpiece",
     tag1: "builder",
@@ -171,15 +236,15 @@ export const fellows: Array<Fellow> = [
     url: "https://www.shawndimantha.com/",
     block: 5
   },
-  {
-    name: "Stella Dennig",
-    position: "Creator, Daytrip",
-    tag1: "builder",
-    tag2: "creative",
-    image: getImage('stella.jpeg'),
-    url: "https://www.instagram.com/this.is.daytrip",
-    block: 5
-  },
+  // {
+  //   name: "Stella Dennig",
+  //   position: "Creator, Daytrip",
+  //   tag1: "builder",
+  //   tag2: "creative",
+  //   image: getImage('stella.jpeg'),
+  //   url: "https://www.instagram.com/this.is.daytrip",
+  //   block: 5
+  // },
   {
     name: "Yatú Peláez-Espinsoa",
     position: "Founder, USB Club",
@@ -245,7 +310,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Ankit",
-    position: "Director of Product, OKX",
+    position: "Founder, dLogos",
     tag1: "builder",
     tag2: "creative",
     image: getImage('ankit.jpeg'),
@@ -272,7 +337,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Michelle Huang",
-    position: "President, Akiya Collective",
+    position: "Founder, Akiya Collective",
     tag1: "builder",
     tag2: "creative",
     image: getImage('michelle.jpeg'),
@@ -299,7 +364,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Greg Bateman",
-    position: "Co-founder, Window Finance",
+    position: "Partner, Inflection Point",
     tag1: "builder",
     tag2: "creative",
     image: getImage('greg.png'),
@@ -386,5 +451,5 @@ export const fellows: Array<Fellow> = [
     image: getImage('ben.jpeg'),
     url: "https://x.com/benlakoff",
     block: 1
-  }
+  },
 ]
