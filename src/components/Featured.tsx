@@ -135,15 +135,15 @@ export const projects: Array<Project> = [
 ]
 
 export const fellows: Array<Fellow> = [
-  {
-    name: "Tao Fei",
-    position: "Cultural Worker, 221A",
-    tag1: "builder",
-    tag2: "creative",
-    image: getImage('tao-fei.jpeg'),
-    url: "https://221a.ca/contributors/tao-fei/",
-    block: 5
-  },
+  // {
+  //   name: "Tao Fei",
+  //   position: "Cultural Worker, 221A",
+  //   tag1: "builder",
+  //   tag2: "creative",
+  //   image: getImage('tao-fei.jpeg'),
+  //   url: "https://221a.ca/contributors/tao-fei/",
+  //   block: 5
+  // },
   {
     // Liz Kukka, Co-founder & CEO, Lane3
     name: "Liz Kukka",
@@ -151,7 +151,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('liz.jpg'),
-    url: "",
+    url: "https://www.linkedin.com/in/elizabethkukka/",
     block: 5
   },
   {
@@ -161,7 +161,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('julia-wu.jpg'),
-    url: "",
+    url: "https://x.com/thejuliawu",
     block: 5
   },
   {
@@ -170,7 +170,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('john2.jpg'),
-    url: null,
+    url: "https://x.com/johnx25bd",
     block: 5
   },
   {
@@ -179,7 +179,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('alanah.jpeg'),
-    url: null,
+    url: "https://www.alanahlam.com/",
     block: 5
   },
   {
@@ -188,7 +188,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('benny.jpg'),
-    url: null,
+    url: "https://x.com/bennygiang",
     block: 5
   },
   {
@@ -197,7 +197,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('Sophia.jpg'),
-    url: null,
+    url: "https://x.com/SophiaRokhlin",
     block: 5
   },
   {
@@ -206,7 +206,25 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('akasha.jpg'),
-    url: null,
+    url: "https://www.linkedin.com/in/akasha-stallworth-75a458160/",
+    block: 5
+  },
+  {
+    name: "Marvin Janssen",
+    position: "Founder & CTO, Ryder",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('marvin.jpg'),
+    url: "https://x.com/MarvinJanssen",
+    block: 5
+  },
+  {
+    name: "Henry Zhu",
+    position: "Hope in Source",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('henryzoo.jpg'),
+    url: "https://henryzoo.com/",
     block: 5
   },
   {
@@ -350,7 +368,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('mara.png'),
-    url: "https://x.com/MaraSchmiedt",
+    url: "https://x.com/maraschmiedt?lang=en",
     block: 1
   },
   {
@@ -382,7 +400,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Apurva Chitnis",
-    position: "Sidetrack (my own startup)",
+    position: "CTO, Koodos",
     tag1: "builder",
     tag2: "creative",
     image: getImage('apurva.jpeg'),
@@ -407,15 +425,15 @@ export const fellows: Array<Fellow> = [
     url: "https://www.atlanticcouncil.org/expert/nikhil-raghuveera/",
     block: 5
   },
-  {
-    name: "Glenn Poppe",
-    position: "Co-founder, Catalog",
-    tag1: "builder",
-    tag2: "creative",
-    image: getImage('glenn.png'),
-    url: "https://meem.wtf",
-    block: 5
-  },
+  // {
+  //   name: "Glenn Poppe",
+  //   position: "Co-founder, Catalog",
+  //   tag1: "builder",
+  //   tag2: "creative",
+  //   image: getImage('glenn.png'),
+  //   url: "https://meem.wtf",
+  //   block: 5
+  // },
   {
     name: "Amelie Lasker",
     position: "Co-founder, Alexandria Labs",
@@ -426,7 +444,7 @@ export const fellows: Array<Fellow> = [
     block: 5
   },
   {
-    name: "Francesco Agostir",
+    name: "Francesco Agosti",
     position: "Co-founder, Phantom",
     tag1: "builder",
     tag2: "creative",
@@ -436,7 +454,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Jenil Thakker",
-    position: "Creator, Coinvise",
+    position: "CEO, EarnKit",
     tag1: "builder",
     tag2: "creative",
     image: getImage('jenil.jpeg'),

@@ -112,14 +112,14 @@ const FirstFold = () => {
               together
             </div>
           </div>
-          <div className="text-lg mt-6">
-            Kernel is a peer-to-peer learning environment.
+          <div className="text-base md:text-lg mt-6">
+            Kernel is about building, through repeated interactions with peers, the patterns required for a better web.
           </div>
-          <div className="text-lg mt-6">
-            We teach, we learn. We listen, create, support, and care. Together, we are planting the seeds required to grow connected systems we hope our descendants will enjoy.
+          <div className="text-base md:text-lg mt-6">
+            Kernel serves up to 150 Kernel fellows — technologists, artists, engineers, researchers, designers, linguists — who each are building or researching something novel.
           </div>
-          <div className="text-lg mt-6">
-            Kernel is a continuous learning environment. Apply and hear back in two weeks. KB11 begins in August.
+          <div className="text-base md:text-lg mt-6">
+            Our next block, KB11, begins in September, but you can start anytime. Apply and hear back in two weeks.
           </div>
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
             <Button type="primary" href="https://apply.kernel.community/11">
