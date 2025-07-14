@@ -69,22 +69,13 @@ export const projects: Array<Project> = [
     projectImage: getImage("sherlock.jpeg", "projects"),
   },
   {
-    name: 'Coinvise',
-    fellowName: 'Jenil Thakker',
-    description: 'Claim onchain rewards. A portal to the world of web3.',
-    tag1: 'Tokens',
-    tag2: null,
-    url: 'https://www.coinvise.co/',
-    projectImage: getImage("coinvise.jpeg", "projects"),
-  },
-  {
     name: 'Toucan',
     fellowName: 'Raphael Haupt, James Farrell',
     description: 'Digital rails for climate finance.',
     tag1: 'Climate Finance',
     tag2: null,
     url: 'https://toucan.earth/',
-    projectImage: getImage("toucan.jpeg", "projects"),
+    projectImage: getImage("toucan.svg", "projects"),
   },
 
   {
