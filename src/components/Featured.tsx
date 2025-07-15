@@ -6,7 +6,7 @@ const baseUrl = self
 
 const getImage = (name: string, dir: "fellows" | "projects" = "fellows") => {
   return (
-    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" style={{ objectFit: "cover", objectPosition: "center" }} unoptimized fill className="rounded-lg"></Image>
+    <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" style={{ objectFit: "contain", objectPosition: "center" }} unoptimized fill className="rounded-lg"></Image>
   )
 }
 
@@ -33,22 +33,22 @@ export type Project = {
 
 export const projects: Array<Project> = [
   {
-    name: 'Pods Finance',
-    fellowName: 'Rafaella Baraldo',
-    description: 'The fastest way to offer crypto backed loans. ',
-    tag1: 'Defi',
+    name: 'Commit',
+    fellowName: 'Rev Miller',
+    description: 'Programmable accountability.',
+    tag1: 'social',
     tag2: null,
-    url: 'https://www.pods.finance/',
-    projectImage: getImage("pods.jpeg", "projects"),
+    url: 'https://www.commit.wtf/',
+    projectImage: getImage("commit.svg", "projects"),
   },
-  {
-    name: 'Push',
-    fellowName: 'Harsh Rajat & Richa Joshi',
-    description: 'The communication protocol of web3.',
-    tag1: 'Communications',
-    tag2: null,
-    url: 'https://push.org/',
-    projectImage: getImage("push.jpeg", "projects"),
+    {
+    name: 'Plastic Labs',
+    fellowName: 'Vince Trost & Courtland Leer',
+    description: 'A research-driven company building at the intersection of human and machine cognition.',
+    tag1: 'ai',
+    tag2: '',
+    url: 'https://plasticlabs.ai/',
+    projectImage: getImage("plastic.png", "projects"),
   },
   {
     name: 'Coinshift',
@@ -69,32 +69,15 @@ export const projects: Array<Project> = [
     projectImage: getImage("sherlock.jpeg", "projects"),
   },
   {
-    name: 'Coinvise',
-    fellowName: 'Jenil Thakker',
-    description: 'Claim onchain rewards. A portal to the world of web3.',
-    tag1: 'Tokens',
-    tag2: null,
-    url: 'https://www.coinvise.co/',
-    projectImage: getImage("coinvise.jpeg", "projects"),
-  },
-  {
     name: 'Toucan',
     fellowName: 'Raphael Haupt, James Farrell',
     description: 'Digital rails for climate finance.',
     tag1: 'Climate Finance',
     tag2: null,
     url: 'https://toucan.earth/',
-    projectImage: getImage("toucan.jpeg", "projects"),
+    projectImage: getImage("toucan.svg", "projects"),
   },
-  {
-    name: 'Bonfire',
-    fellowName: 'Melissa Zhang, Matt Alston',
-    description: 'Bringing creators and brands closer to their biggest fans.',
-    tag1: 'Token Communities',
-    tag2: 'Creators',
-    url: 'https://www.bonfire.xyz/',
-    projectImage: getImage("bonfire.jpeg", "projects"),
-  },
+
   {
     name: 'LiFi',
     fellowName: 'Philipp Zentner',
@@ -102,7 +85,7 @@ export const projects: Array<Project> = [
     tag1: 'Interoperability',
     tag2: 'Exchanges',
     url: 'https://li.fi/',
-    projectImage: getImage("lifi.jpeg", "projects"),
+    projectImage: getImage("lifi.png", "projects"),
   },
   {
     name: 'Jokerace',
@@ -132,24 +115,107 @@ export const projects: Array<Project> = [
     projectImage: getImage("fp.jpeg", "projects"),
   },
   {
-    name: 'DLogos',
+    name: 'dLogos',
     fellowName: 'Anonymous',
     description: 'Participate in the world\'s most valuable conversations.',
     tag1: 'Dialogues',
     tag2: 'Markets',
-    url: 'https://testnet.dlogos.xyz/',
+    url: 'https://www.dlogos.xyz/',
     projectImage: getImage("dlogos.jpeg", "projects"),
   },
 ]
 
 export const fellows: Array<Fellow> = [
+  // {
+  //   name: "Tao Fei",
+  //   position: "Cultural Worker, 221A",
+  //   tag1: "builder",
+  //   tag2: "creative",
+  //   image: getImage('tao-fei.jpeg'),
+  //   url: "https://221a.ca/contributors/tao-fei/",
+  //   block: 5
+  // },
   {
-    name: "Tao Fei",
-    position: "Cultural Worker, 221A",
+    // Liz Kukka, Co-founder & CEO, Lane3
+    name: "Liz Kukka",
+    position: "Co-founder & CEO, Lane3",
     tag1: "builder",
     tag2: "creative",
-    image: getImage('tao-fei.jpeg'),
-    url: "https://221a.ca/contributors/tao-fei/",
+    image: getImage('liz.jpg'),
+    url: "https://www.linkedin.com/in/elizabethkukka/",
+    block: 5
+  },
+  {
+    // Julia Wu, Co-founder, Spark AI
+    name: "Julia Wu",
+    position: "Co-founder, Spark AI",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('julia-wu.jpg'),
+    url: "https://x.com/thejuliawu",
+    block: 5
+  },
+  {
+    name: "John Hoopes",
+    position: "Founder, Astral Protocol",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('john2.jpg'),
+    url: "https://x.com/johnx25bd",
+    block: 5
+  },
+  {
+    name: "Alanah Lam",
+    position: "Lead Designer, Future Primitive",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('alanah.jpeg'),
+    url: "https://www.alanahlam.com/",
+    block: 5
+  },
+  {
+    name: "Benny Giang",
+    position: "Co-founder, Future Primitive",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('benny.jpg'),
+    url: "https://x.com/bennygiang",
+    block: 5
+  },
+  {
+    name: "Sophia Rokhlin",
+    position: "Community, Ma Earth",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('Sophia.jpg'),
+    url: "https://x.com/SophiaRokhlin",
+    block: 5
+  },
+  {
+    name: "Akasha Stallworth",
+    position: "Founder, Concordance",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('akasha.jpg'),
+    url: "https://www.linkedin.com/in/akasha-stallworth-75a458160/",
+    block: 5
+  },
+  {
+    name: "Marvin Janssen",
+    position: "Founder & CTO, Ryder",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('marvin.jpg'),
+    url: "https://x.com/MarvinJanssen",
+    block: 5
+  },
+  {
+    name: "Henry Zhu",
+    position: "Hope in Source",
+    tag1: "builder",
+    tag2: "creative",
+    image: getImage('henryzoo.jpg'),
+    url: "https://henryzoo.com/",
     block: 5
   },
   {
@@ -157,7 +223,7 @@ export const fellows: Array<Fellow> = [
     position: "Founder, Mouthpiece",
     tag1: "builder",
     tag2: "creative",
-    image: getImage('jess-sun.png'),
+    image: getImage('jess-sun.jpeg'),
     url: "https://jess-sun.com",
     block: 7
   },
@@ -179,15 +245,15 @@ export const fellows: Array<Fellow> = [
     url: "https://www.shawndimantha.com/",
     block: 5
   },
-  {
-    name: "Stella Dennig",
-    position: "Creator, Daytrip",
-    tag1: "builder",
-    tag2: "creative",
-    image: getImage('stella.jpeg'),
-    url: "https://www.instagram.com/this.is.daytrip",
-    block: 5
-  },
+  // {
+  //   name: "Stella Dennig",
+  //   position: "Creator, Daytrip",
+  //   tag1: "builder",
+  //   tag2: "creative",
+  //   image: getImage('stella.jpeg'),
+  //   url: "https://www.instagram.com/this.is.daytrip",
+  //   block: 5
+  // },
   {
     name: "Yatú Peláez-Espinsoa",
     position: "Founder, USB Club",
@@ -253,7 +319,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Ankit",
-    position: "Director of Product, OKX",
+    position: "Founder, dLogos",
     tag1: "builder",
     tag2: "creative",
     image: getImage('ankit.jpeg'),
@@ -280,7 +346,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Michelle Huang",
-    position: "President, Akiya Collective",
+    position: "Founder, Akiya Collective",
     tag1: "builder",
     tag2: "creative",
     image: getImage('michelle.jpeg'),
@@ -293,7 +359,7 @@ export const fellows: Array<Fellow> = [
     tag1: "builder",
     tag2: "creative",
     image: getImage('mara.png'),
-    url: "https://x.com/MaraSchmiedt",
+    url: "https://x.com/maraschmiedt?lang=en",
     block: 1
   },
   {
@@ -307,7 +373,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Greg Bateman",
-    position: "Co-founder, Window Finance",
+    position: "Partner, Inflection Point",
     tag1: "builder",
     tag2: "creative",
     image: getImage('greg.png'),
@@ -325,7 +391,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Apurva Chitnis",
-    position: "Sidetrack (my own startup)",
+    position: "CTO, Koodos",
     tag1: "builder",
     tag2: "creative",
     image: getImage('apurva.jpeg'),
@@ -343,22 +409,22 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Nikhil Raghuveera",
-    position: "Co-founder, Aethos",
+    position: "Co-founder, Predicate",
     tag1: "builder",
     tag2: "creative",
     image: getImage('nikhil.jpeg'),
     url: "https://www.atlanticcouncil.org/expert/nikhil-raghuveera/",
     block: 5
   },
-  {
-    name: "Glenn Poppe",
-    position: "Co-founder, Catalog",
-    tag1: "builder",
-    tag2: "creative",
-    image: getImage('glenn.png'),
-    url: "https://meem.wtf",
-    block: 5
-  },
+  // {
+  //   name: "Glenn Poppe",
+  //   position: "Co-founder, Catalog",
+  //   tag1: "builder",
+  //   tag2: "creative",
+  //   image: getImage('glenn.png'),
+  //   url: "https://meem.wtf",
+  //   block: 5
+  // },
   {
     name: "Amelie Lasker",
     position: "Co-founder, Alexandria Labs",
@@ -369,7 +435,7 @@ export const fellows: Array<Fellow> = [
     block: 5
   },
   {
-    name: "Francesco Agostir",
+    name: "Francesco Agosti",
     position: "Co-founder, Phantom",
     tag1: "builder",
     tag2: "creative",
@@ -379,7 +445,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Jenil Thakker",
-    position: "Creator, Coinvise",
+    position: "CEO, EarnKit",
     tag1: "builder",
     tag2: "creative",
     image: getImage('jenil.jpeg'),
@@ -394,5 +460,5 @@ export const fellows: Array<Fellow> = [
     image: getImage('ben.jpeg'),
     url: "https://x.com/benlakoff",
     block: 1
-  }
+  },
 ]

@@ -3,19 +3,19 @@ import KernelPlant from "../../public/kernel-plant.gif";
 import PixelBg from "../../public/pixel.png";
 import Trees from "../../public/trees.png";
 import LogoImage from "../../public/logo.png";
-import Gitcoin from "../../public/gitcoin.svg";
+import Anoma from "../../public/supporters/anoma.svg";
+import Celo from "../../public/supporters/celo.png";
+import Ethereum from "../../public/supporters/ethereum.svg";
+import Filecoin from "../../public/supporters/filecoin.jpeg";
+import Gitcoin from "../../public/supporters/gitcoin.svg";
+import Optimism from "../../public/supporters/optimism.svg";
+import TheGraph from "../../public/supporters/thegraph.png";
 import {fellows as featured, projects} from "../components/Featured";
 import type { Fellow, Project } from "../components/Featured";
 import FlipCardGrid from "@/components/Cards";
 import { ReactElement } from "react";
-import { Miriam_Libre } from 'next/font/google'
 import { MoveRight } from 'lucide-react';
-
-const miriam = Miriam_Libre({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '700']
-})
+import { miriam } from '@/lib/fonts';
 
 const KernelPlantComponent = () => {
   return (
@@ -98,7 +98,7 @@ const Button = ({children, type, href}: {children: ReactElement, type:"primary" 
 // hero section
 const FirstFold = () => {
   return (
-    <div className={`grid sm:grid-cols-2 sm:h-[500px]`}>
+    <div className={`grid sm:grid-cols-2 sm:h-[500px] mb-12`}>
       <div className="sm:hidden block">
         <KernelPlantComponent />
       </div>
@@ -112,14 +112,14 @@ const FirstFold = () => {
               together
             </div>
           </div>
-          <div className="text-lg mt-6">
-            Kernel is a peer-to-peer learning environment.  
+          <div className="text-base md:text-lg mt-6">
+            Kernel is about building, through repeated interactions with peers, the patterns required for a better web.
           </div>
-          <div className="text-lg mt-6">
-            We teach, we learn. We listen, create, support, and care. Together, we are planting the seeds required to grow connected systems we hope our descendants will enjoy.
+          <div className="text-base md:text-lg mt-6">
+            Kernel serves up to 150 Kernel fellows — technologists, artists, engineers, researchers, designers, linguists — who each are building or researching something novel.
           </div>
-          <div className="text-lg mt-6">
-            Kernel is a continuous learning environment. Apply and hear back in two weeks. KB11 begins in August.
+          <div className="text-base md:text-lg mt-6">
+            Our next block, KB11, begins in September, but you can start anytime. Apply and hear back in two weeks.
           </div>
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
             <Button type="primary" href="https://apply.kernel.community/11">
@@ -200,11 +200,11 @@ const Fellows = () => {
 // fellows
 const SecondFold = () => {
   return (
-    <div className={`h-[780px] w-full flex flex-col items-center p-3 relative bg-[#F9F9F9] overflow-clip`}>
+    <div className={`h-[780px] w-full flex flex-col items-center p-3 relative bg-[#F9F9F9] overflow-clip mb-12`}>
       <div className={`sm:text-4xl text-3xl z-10 mt-20 ${miriam.className}`}>
         Meet the Kernel Fellows
       </div>
-      <div className="w-full sm:w-3/5 h-full grow overflow-hidden mt-12 z-10 mb-14">
+      <div className="w-full h-full grow overflow-hidden mt-12 z-10 mb-14">
         <div className="gap-6 sm:gap-16 grid grid-rows-2 grid-flow-col w-full h-full overflow-x-auto overflow-y-hidden">
           <Fellows />
         </div>
@@ -286,7 +286,7 @@ const Projects = () => {
 // projects
 const FourthFold = () => {
   return (
-    <div className={`h-[500px] w-full bg-[#F9F9F9] flex flex-col items-center p-3 overflow-hidden relative my-12`}>
+    <div className={`h-[500px] w-full bg-[#F9F9F9] flex flex-col items-center p-3 overflow-hidden relative mb-12`}>
       <div className={`sm:text-4xl text-3xl mt-14 z-10 ${miriam.className}`}>
         Projects by Kernel Fellows
       </div>
@@ -300,8 +300,8 @@ const FourthFold = () => {
 // kernel syllabus
 const FifthFold = () => {
   return (
-    <div className={`w-full flex flex-col items-center p-3`}>
-      <div className="sm:text-4xl text-3xl font-medium">
+    <div className={`w-full flex flex-col items-center p-3 mb-12`}>
+      <div className={`sm:text-4xl text-3xl font-medium ${miriam.className}`}>
         Explore the Kernel Book
       </div>
       <div className="sm:text-xl sm:w-[990px] text-base w-full text-center mb-12 mt-6">
@@ -315,19 +315,38 @@ const FifthFold = () => {
 // footer
 const Footer = () => {
   return (
-    <div className={`h-[250px] w-full flex flex-col items-center p-3 overflow-hidden pt-12`}>
+    <div className={`w-full flex flex-col items-center p-3 overflow-hidden pt-12 pb-32`}>
       <Button type="primary" href="https://apply.kernel.community/11">
         <>
           Apply to KB11 now <MoveRight />
         </>
       </Button>
-      <div>
-        <div className="text-center font-medium text-l sm:text-2xl mt-10 mb-4">Incubated by</div>
-        <a href="https://www.gitcoin.co/" target="_blank" rel="noreferrer noopener">
-        <div className="flex">
-          <Image src={Gitcoin} style={{ objectFit: "cover" }} height={100} width={150} alt="Gitcoin" unoptimized />
+      <div className="w-full">
+        <div className="text-center font-medium text-l sm:text-2xl mt-10 mb-8">Supporters</div>
+        {/* <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto items-center center"> */}
+        <div className="flex flex-wrap justify-center gap-12 max-w-2xl mx-auto items-center">
+                    <a href="https://www.gitcoin.co/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+            <Image src={Gitcoin} style={{ objectFit: "contain" }} height={50} width={80} alt="Gitcoin" unoptimized />
+          </a>
+          <a href="https://anoma.net/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+            <Image src={Anoma} style={{ objectFit: "contain" }} height={50} width={80} alt="Anoma" unoptimized />
+          </a>
+          <a href="https://celo.org/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+            <Image src={Celo} style={{ objectFit: "contain" }} height={50} width={80} alt="Celo" unoptimized />
+          </a>
+          <a href="https://ethereum.org/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+            <Image src={Ethereum} style={{ objectFit: "contain" }} height={50} width={80} alt="Ethereum" unoptimized />
+          </a>
+          <a href="https://filecoin.io/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+            <Image src={Filecoin} style={{ objectFit: "contain" }} height={50} width={80} alt="Filecoin" unoptimized />
+          </a>
+          <a href="https://www.optimism.io/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer">
+            <Image src={Optimism} style={{ objectFit: "contain" }} height={50} width={80} alt="Optimism" unoptimized />
+          </a>
+          <a href="https://thegraph.com/" target="_blank" rel="noreferrer noopener" className="flex justify-center p-4 rounded-lg hover:bg-gray-100 transition-colors duration-200 cursor-pointer col-span-2 sm:col-span-1">
+            <Image src={TheGraph} style={{ objectFit: "contain" }} height={50} width={80} alt="The Graph" unoptimized />
+          </a>
         </div>
-        </a>
       </div>
     </div>
   )
