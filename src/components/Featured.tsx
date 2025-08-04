@@ -328,7 +328,7 @@ export const fellows: Array<Fellow> = [
   },
   {
     name: "Zain Bacchus",
-    position: "Product Manager, Optimism",
+    position: "Lead Product Manager, Helius",
     tag1: "builder",
     tag2: "creative",
     image: getImage('zain.png'),
