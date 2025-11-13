@@ -122,7 +122,7 @@ const FirstFold = () => {
             Our next block, KB11, begins in September, but you can start anytime. Apply and hear back in two weeks.
           </div>
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
-            <Button type="primary" href="https://apply.kernel.community/11">
+            <Button type="primary" href="https://apply.kernel.community/">
               <>
                 Apply to KB11 now <MoveRight />
               </>
@@ -316,7 +316,7 @@ const FifthFold = () => {
 const Footer = () => {
   return (
     <div className={`w-full flex flex-col items-center p-3 overflow-hidden pt-12 pb-32`}>
-      <Button type="primary" href="https://apply.kernel.community/11">
+      <Button type="primary" href="https://apply.kernel.community/">
         <>
           Apply to KB11 now <MoveRight />
         </>
