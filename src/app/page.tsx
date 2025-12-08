@@ -119,7 +119,7 @@ const FirstFold = () => {
             Kernel serves up to 150 Kernel fellows — technologists, artists, engineers, researchers, designers, linguists — who each are building or researching something novel.
           </div>
           <div className="text-base md:text-lg mt-6">
-            Our next block, KB11, begins in September, but you can start anytime. Apply and hear back in two weeks.
+            Our current block, KB12, is coming together now. Apply and hear back in two weeks.
           </div>
           <div className="flex gap-6 mt-[32px] items-center sm:flex-row flex-col">
             <Button type="primary" href="https://apply.kernel.community/">
