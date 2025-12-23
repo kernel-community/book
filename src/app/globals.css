@@ -13,6 +13,7 @@
 :root {
   --background: #ffffff;
   --foreground: #4B5B33;
+  --primary: #4B5B33;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,6 +33,112 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Standardize paragraph spacing */
+.prose p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose p:first-child {
+  margin-top: 0;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* First h1 or h2 on page should have no top margin */
+.prose > h1:first-child,
+.prose > h2:first-child {
+  margin-top: 0;
+}
+
+/* List styling */
+.prose ol,
+.prose ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose li {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.prose li:first-child {
+  margin-top: 0;
+}
+
+.prose li:last-child {
+  margin-bottom: 0;
+}
+
+/* Nested lists */
+.prose li > ol,
+.prose li > ul {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Remove top margin from lists that follow paragraphs */
+.prose p + ol,
+.prose p + ul {
+  margin-top: 1.5rem;
+}
+
+/* Link styling - bold and underlined */
+.prose a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Remove underline for links inside buttons and button-like links */
+.prose button a,
+.prose a[class*="rounded-full"],
+.prose a[class*="inline-flex"][class*="items-center"],
+.prose a[class*="font-bold"][class*="rounded-full"] {
+  text-decoration: none !important;
+}
+
+/* Headings inside boxes with green background should have white text */
+.prose [style*="background-color: rgb(75, 91, 51)"] h1,
+.prose [style*="background-color: rgb(75, 91, 51)"] h2,
+.prose [style*="background-color: rgb(75, 91, 51)"] h3,
+.prose [style*="background-color: rgb(75, 91, 51)"] h4,
+.prose [style*="background-color: rgb(75, 91, 51)"] h5,
+.prose [style*="background-color: rgb(75, 91, 51)"] h6,
+.prose [class*="bg-[#4B5B33]"] h1,
+.prose [class*="bg-[#4B5B33]"] h2,
+.prose [class*="bg-[#4B5B33]"] h3,
+.prose [class*="bg-[#4B5B33]"] h4,
+.prose [class*="bg-[#4B5B33]"] h5,
+.prose [class*="bg-[#4B5B33]"] h6 {
+  color: white;
+}
+
+/* Sidenav details/summary styling */
+aside details summary {
+  list-style: none;
+}
+
+aside details summary::-webkit-details-marker {
+  display: none;
+}
+
+aside details summary::marker {
+  display: none;
 }
 
 .flip-card {
@@ -59,4 +166,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+/* Center images within Box components */
+.box-component img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

@@ -1,6 +1,27 @@
-/** @type {import('next').NextConfig} */
+import createMDX from "@next/mdx";
+import remarkFrontmatter from "remark-frontmatter";
+import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
+    rehypePlugins: [],
+  },
+});
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ["ts", "tsx", "mdx"],
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        "porto/internal": false,
+      };
+    }
+    return config;
+  },
   images: {
     remotePatterns: [
       {
@@ -37,4 +58,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);

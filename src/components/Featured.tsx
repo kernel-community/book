@@ -1,10 +1,15 @@
-import self from "@/utils/self";
 import Image from "next/image";
 import { ReactElement } from "react";
 
-const baseUrl = self
+const getBaseUrl = (): string => {
+  if (typeof window !== 'undefined') {
+    return window.location.origin;
+  }
+  return 'https://www.kernel.community';
+};
 
 const getImage = (name: string, dir: "fellows" | "projects" = "fellows") => {
+  const baseUrl = getBaseUrl();
   return (
     <Image src={`${baseUrl}/${dir}/${name}`} alt="fellow image" style={{ objectFit: "contain", objectPosition: "center" }} unoptimized fill className="rounded-lg"></Image>
   )
@@ -462,3 +467,84 @@ export const fellows: Array<Fellow> = [
     block: 1
   },
 ]
+
+// Component for rendering a single Fellow
+const FellowCard = ({ fellow }: { fellow: Fellow }) => {
+  return (
+    <a className="flex flex-col gap-2 h-[221px] w-[112px] ml-3" href={fellow.url ?? ""} target="_blank" rel="noopener noreferrer">
+      {/* image */}
+      <div className="rounded-lg relative h-[112px] w-[112px]">
+        {fellow.image}
+      </div>
+      {/* details */}
+      <div className="w-full cursor-pointer flex flex-col justify-between">
+        <div className="font-bold">
+          {fellow.name}
+        </div>
+        <div className="text-sm">
+          {fellow.position}
+        </div>
+      </div>
+    </a>
+  )
+}
+
+// Component for rendering all Fellows
+export const Fellows = () => {
+  return (
+    <div className="w-full max-w-full overflow-x-auto overflow-y-hidden">
+      <div className="grid grid-rows-2 grid-flow-col gap-6 sm:gap-16 min-w-max">
+        {fellows.map((fellow, key) => (
+          <FellowCard fellow={fellow} key={key} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// Component for rendering a single Project
+const ProjectCard = ({ project }: { project: Project }) => {
+  const Tag = ({ text }: { text: string }) => {
+    return (
+      <div className="inline-flex gap-3">
+        <div className="border-[1px] border-slate-400 rounded-lg text-xs p-[2px]">
+          {text}
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <a className="h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] border-[1px] border-slate-200 flex flex-col rounded-lg m-3 cursor-pointer" href={project.url} target="_blank" rel="noopener noreferrer">
+      <div className="relative min-h-[40%]">
+        {project.projectImage}
+      </div>
+      <div className="flex flex-col min-h-[60%] overflow-auto justify-between p-2">
+        <div className="flex flex-col">
+          <div className="text-xl font-bold">{project.name}</div>
+          <div className="font-bold">by {project.fellowName}</div>
+        </div>
+        <div>
+          {project.description}
+        </div>
+        <div className="flex gap-3">
+          <Tag text={project.tag1} />
+          {project.tag2 && <Tag text={project.tag2} />}
+        </div>
+      </div>
+    </a>
+  )
+}
+
+// Component for rendering all Projects
+export const Projects = () => {
+  return (
+    <div className="w-full max-w-full overflow-x-auto overflow-y-hidden">
+      <div className="flex flex-row gap-6 px-3 min-w-max">
+        {projects.map((proj, key) => (
+          <ProjectCard project={proj} key={key} />
+        ))}
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,2492 @@
+[
+  {
+    "locale": "cn",
+    "topSection": "start",
+    "title": "Conducting Code",
+    "slug": "/cn/start/code-of-conduct",
+    "rawSlug": "/start/code-of-conduct",
+    "slugPart": "code-of-conduct",
+    "order": 1,
+    "path": "cn/start/code-of-conduct.mdx"
+  },
+  {
+    "locale": "cn",
+    "topSection": "start",
+    "title": "开始",
+    "slug": "/cn/start",
+    "rawSlug": "/start",
+    "slugPart": "start",
+    "order": null,
+    "path": "cn/start/index.mdx"
+  },
+  {
+    "locale": "cn",
+    "topSection": "start",
+    "title": "Kernel 原则",
+    "slug": "/cn/start/principled-people",
+    "rawSlug": "/start/principled-people",
+    "slugPart": "principled-people",
+    "order": 0,
+    "path": "cn/start/principled-people.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Culture",
+    "slug": "/en/build/culture",
+    "rawSlug": "/build/culture",
+    "slugPart": "culture",
+    "order": 11,
+    "path": "en/build/culture/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Dance Classes",
+    "slug": "/en/build/dance/classes",
+    "rawSlug": "/build/dance/classes",
+    "slugPart": "classes",
+    "order": 9,
+    "path": "en/build/dance/classes.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Dance Glossary",
+    "slug": "/en/build/dance/glossary",
+    "rawSlug": "/build/dance/glossary",
+    "slugPart": "glossary",
+    "order": 10,
+    "path": "en/build/dance/glossary.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Movement",
+    "slug": "/en/build/dance",
+    "rawSlug": "/build/dance",
+    "slugPart": "dance",
+    "order": 12,
+    "path": "en/build/dance/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Inspiration",
+    "slug": "/en/build/dance/inspiration",
+    "rawSlug": "/build/dance/inspiration",
+    "slugPart": "inspiration",
+    "order": 12,
+    "path": "en/build/dance/inspiration.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Cosmic Reality",
+    "slug": "/en/build/daos/cosmic-reality",
+    "rawSlug": "/build/daos/cosmic-reality",
+    "slugPart": "cosmic-reality",
+    "order": 5,
+    "path": "en/build/daos/cosmic-reality.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Expanding Universe",
+    "slug": "/en/build/daos/expanding-universe",
+    "rawSlug": "/build/daos/expanding-universe",
+    "slugPart": "expanding-universe",
+    "order": 4,
+    "path": "en/build/daos/expanding-universe.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "DAOs & Dragons",
+    "slug": "/en/build/daos",
+    "rawSlug": "/build/daos",
+    "slugPart": "daos",
+    "order": 3,
+    "path": "en/build/daos/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Infinite Learning",
+    "slug": "/en/build/daos/infinite-learning",
+    "rawSlug": "/build/daos/infinite-learning",
+    "slugPart": "infinite-learning",
+    "order": 7,
+    "path": "en/build/daos/infinite-learning.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "The Open Multiverse",
+    "slug": "/en/build/daos/open-multiverse",
+    "rawSlug": "/build/daos/open-multiverse",
+    "slugPart": "open-multiverse",
+    "order": 6,
+    "path": "en/build/daos/open-multiverse.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Light From The Past",
+    "slug": "/en/build/daos/past-light",
+    "rawSlug": "/build/daos/past-light",
+    "slugPart": "past-light",
+    "order": 3,
+    "path": "en/build/daos/past-light.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Recordings",
+    "slug": "/en/build/daos/record",
+    "rawSlug": "/build/daos/record",
+    "slugPart": "record",
+    "order": 8,
+    "path": "en/build/daos/record.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Analogue Imaginings",
+    "slug": "/en/build/decentralized-ai/analogue-imaginings",
+    "rawSlug": "/build/decentralized-ai/analogue-imaginings",
+    "slugPart": "analogue-imaginings",
+    "order": 8,
+    "path": "en/build/decentralized-ai/analogue-imaginings.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Generative Adversaries",
+    "slug": "/en/build/decentralized-ai/generative-adversaries",
+    "rawSlug": "/build/decentralized-ai/generative-adversaries",
+    "slugPart": "generative-adversaries",
+    "order": 6,
+    "path": "en/build/decentralized-ai/generative-adversaries.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Decentralized Intelligence",
+    "slug": "/en/build/decentralized-ai",
+    "rawSlug": "/build/decentralized-ai",
+    "slugPart": "decentralized-ai",
+    "order": 7,
+    "path": "en/build/decentralized-ai/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Into The Ocean",
+    "slug": "/en/build/decentralized-ai/into-the-ocean",
+    "rawSlug": "/build/decentralized-ai/into-the-ocean",
+    "slugPart": "into-the-ocean",
+    "order": 5,
+    "path": "en/build/decentralized-ai/into-the-ocean.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Of Punks and Python Libraries",
+    "slug": "/en/build/decentralized-ai/punks-python",
+    "rawSlug": "/build/decentralized-ai/punks-python",
+    "slugPart": "punks-python",
+    "order": 7,
+    "path": "en/build/decentralized-ai/punks-python.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Funding",
+    "slug": "/en/build/defi/funding-grants",
+    "rawSlug": "/build/defi/funding-grants",
+    "slugPart": "funding-grants",
+    "order": 9,
+    "path": "en/build/defi/funding-grants.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "DeFi",
+    "slug": "/en/build/defi",
+    "rawSlug": "/build/defi",
+    "slugPart": "defi",
+    "order": 8,
+    "path": "en/build/defi/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "DeSci",
+    "slug": "/en/build/desci",
+    "rawSlug": "/build/desci",
+    "slugPart": "desci",
+    "order": 9,
+    "path": "en/build/desci/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Open Questions",
+    "slug": "/en/build/desci/open-questions",
+    "rawSlug": "/build/desci/open-questions",
+    "slugPart": "open-questions",
+    "order": 9,
+    "path": "en/build/desci/open-questions.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Freely",
+    "slug": "/en/build/games/freedom",
+    "rawSlug": "/build/games/freedom",
+    "slugPart": "freedom",
+    "order": 3,
+    "path": "en/build/games/freedom.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "For the Love of Games",
+    "slug": "/en/build/games",
+    "rawSlug": "/build/games",
+    "slugPart": "games",
+    "order": 0,
+    "path": "en/build/games/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "And Infinitely",
+    "slug": "/en/build/games/infinite",
+    "rawSlug": "/build/games/infinite",
+    "slugPart": "infinite",
+    "order": 4,
+    "path": "en/build/games/infinite.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Trusting Play",
+    "slug": "/en/build/games/patterns",
+    "rawSlug": "/build/games/patterns",
+    "slugPart": "patterns",
+    "order": 1,
+    "path": "en/build/games/patterns.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "On Record",
+    "slug": "/en/build/games/recordings",
+    "rawSlug": "/build/games/recordings",
+    "slugPart": "recordings",
+    "order": 4,
+    "path": "en/build/games/recordings.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "To Create Value",
+    "slug": "/en/build/games/value",
+    "rawSlug": "/build/games/value",
+    "slugPart": "value",
+    "order": 2,
+    "path": "en/build/games/value.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Build",
+    "slug": "/en/build",
+    "rawSlug": "/build",
+    "slugPart": "build",
+    "order": null,
+    "path": "en/build/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Character Types",
+    "slug": "/en/build/nfteasy/character-types",
+    "rawSlug": "/build/nfteasy/character-types",
+    "slugPart": "character-types",
+    "order": 3,
+    "path": "en/build/nfteasy/character-types.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "NFTeasy",
+    "slug": "/en/build/nfteasy",
+    "rawSlug": "/build/nfteasy",
+    "slugPart": "nfteasy",
+    "order": 2,
+    "path": "en/build/nfteasy/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Long Life Libraries",
+    "slug": "/en/build/nfteasy/long-life-libraries",
+    "rawSlug": "/build/nfteasy/long-life-libraries",
+    "slugPart": "long-life-libraries",
+    "order": 2,
+    "path": "en/build/nfteasy/long-life-libraries.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Perma-Network Culture",
+    "slug": "/en/build/nfteasy/perma-network-culture",
+    "rawSlug": "/build/nfteasy/perma-network-culture",
+    "slugPart": "perma-network-culture",
+    "order": 3,
+    "path": "en/build/nfteasy/perma-network-culture.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Woulds & Tries",
+    "slug": "/en/build/nfteasy/woulds-tries",
+    "rawSlug": "/build/nfteasy/woulds-tries",
+    "slugPart": "woulds-tries",
+    "order": 4,
+    "path": "en/build/nfteasy/woulds-tries.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Open Data",
+    "slug": "/en/build/open-data",
+    "rawSlug": "/build/open-data",
+    "slugPart": "open-data",
+    "order": 10,
+    "path": "en/build/open-data/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Trans-Local",
+    "slug": "/en/build/open-data/trans-local",
+    "rawSlug": "/build/open-data/trans-local",
+    "slugPart": "trans-local",
+    "order": 13,
+    "path": "en/build/open-data/trans-local.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Trans-Act",
+    "slug": "/en/build/open-data/transact",
+    "rawSlug": "/build/open-data/transact",
+    "slugPart": "transact",
+    "order": 11,
+    "path": "en/build/open-data/transact.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Trans-Send",
+    "slug": "/en/build/open-data/transcend",
+    "rawSlug": "/build/open-data/transcend",
+    "slugPart": "transcend",
+    "order": 12,
+    "path": "en/build/open-data/transcend.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Transfinity",
+    "slug": "/en/build/open-data/transfinity",
+    "rawSlug": "/build/open-data/transfinity",
+    "slugPart": "transfinity",
+    "order": 10,
+    "path": "en/build/open-data/transfinity.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Outsmarting Contracts",
+    "slug": "/en/build/outsmarting-contracts",
+    "rawSlug": "/build/outsmarting-contracts",
+    "slugPart": "outsmarting-contracts",
+    "order": 1,
+    "path": "en/build/outsmarting-contracts/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Lifting The Veil",
+    "slug": "/en/build/outsmarting-contracts/lifting-the-veil",
+    "rawSlug": "/build/outsmarting-contracts/lifting-the-veil",
+    "slugPart": "lifting-the-veil",
+    "order": 1,
+    "path": "en/build/outsmarting-contracts/lifting-the-veil.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Random Order",
+    "slug": "/en/build/outsmarting-contracts/random-order",
+    "rawSlug": "/build/outsmarting-contracts/random-order",
+    "slugPart": "random-order",
+    "order": 2,
+    "path": "en/build/outsmarting-contracts/random-order.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Re-Enter The Kingdom",
+    "slug": "/en/build/outsmarting-contracts/reenter-the-kingdom",
+    "rawSlug": "/build/outsmarting-contracts/reenter-the-kingdom",
+    "slugPart": "reenter-the-kingdom",
+    "order": 4,
+    "path": "en/build/outsmarting-contracts/reenter-the-kingdom.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "The True Store",
+    "slug": "/en/build/outsmarting-contracts/true-store",
+    "rawSlug": "/build/outsmarting-contracts/true-store",
+    "slugPart": "true-store",
+    "order": 3,
+    "path": "en/build/outsmarting-contracts/true-store.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Regeneration",
+    "slug": "/en/build/regeneration",
+    "rawSlug": "/build/regeneration",
+    "slugPart": "regeneration",
+    "order": 6,
+    "path": "en/build/regeneration/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Locus of Control",
+    "slug": "/en/build/regeneration/locus-of-control",
+    "rawSlug": "/build/regeneration/locus-of-control",
+    "slugPart": "locus-of-control",
+    "order": 9,
+    "path": "en/build/regeneration/locus-of-control.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Phoenix Regeneration",
+    "slug": "/en/build/regeneration/phoenix",
+    "rawSlug": "/build/regeneration/phoenix",
+    "slugPart": "phoenix",
+    "order": 10,
+    "path": "en/build/regeneration/phoenix.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Identifying Key Leverage Points",
+    "slug": "/en/build/regeneration/points-of-leverage",
+    "rawSlug": "/build/regeneration/points-of-leverage",
+    "slugPart": "points-of-leverage",
+    "order": 8,
+    "path": "en/build/regeneration/points-of-leverage.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Principles and Design Patterns",
+    "slug": "/en/build/regeneration/principled-patterning",
+    "rawSlug": "/build/regeneration/principled-patterning",
+    "slugPart": "principled-patterning",
+    "order": 7,
+    "path": "en/build/regeneration/principled-patterning.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Heart-Mind",
+    "slug": "/en/build/sati/citta",
+    "rawSlug": "/build/sati/citta",
+    "slugPart": "citta",
+    "order": 13,
+    "path": "en/build/sati/citta.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Principles",
+    "slug": "/en/build/sati/dhamma",
+    "rawSlug": "/build/sati/dhamma",
+    "slugPart": "dhamma",
+    "order": 14,
+    "path": "en/build/sati/dhamma.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Mindful",
+    "slug": "/en/build/sati",
+    "rawSlug": "/build/sati",
+    "slugPart": "sati",
+    "order": 13,
+    "path": "en/build/sati/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Body-Breath",
+    "slug": "/en/build/sati/kayagata",
+    "rawSlug": "/build/sati/kayagata",
+    "slugPart": "kayagata",
+    "order": 11,
+    "path": "en/build/sati/kayagata.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "build",
+    "title": "Feeling-Tone",
+    "slug": "/en/build/sati/vedana",
+    "rawSlug": "/build/sati/vedana",
+    "slugPart": "vedana",
+    "order": 13,
+    "path": "en/build/sati/vedana.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Deep Response",
+    "slug": "/en/conversation/hospitality/deep-response",
+    "rawSlug": "/conversation/hospitality/deep-response",
+    "slugPart": "deep-response",
+    "order": 7,
+    "path": "en/conversation/hospitality/deep-response.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Hospitality",
+    "slug": "/en/conversation/hospitality",
+    "rawSlug": "/conversation/hospitality",
+    "slugPart": "hospitality",
+    "order": 6,
+    "path": "en/conversation/hospitality/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "In-Visibility",
+    "slug": "/en/conversation/in-visibility",
+    "rawSlug": "/conversation/in-visibility",
+    "slugPart": "in-visibility",
+    "order": 7,
+    "path": "en/conversation/in-visibility.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Converse",
+    "slug": "/en/conversation",
+    "rawSlug": "/conversation",
+    "slugPart": "conversation",
+    "order": null,
+    "path": "en/conversation/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Oral Testimony",
+    "slug": "/en/conversation/oral-testimony",
+    "rawSlug": "/conversation/oral-testimony",
+    "slugPart": "oral-testimony",
+    "order": 2,
+    "path": "en/conversation/oral-testimony.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Power Less",
+    "slug": "/en/conversation/power-less",
+    "rawSlug": "/conversation/power-less",
+    "slugPart": "power-less",
+    "order": 8,
+    "path": "en/conversation/power-less.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Sweet Stories",
+    "slug": "/en/conversation/reciprocity",
+    "rawSlug": "/conversation/reciprocity",
+    "slugPart": "reciprocity",
+    "order": 3,
+    "path": "en/conversation/reciprocity.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Sand Talk",
+    "slug": "/en/conversation/sand-talk",
+    "rawSlug": "/conversation/sand-talk",
+    "slugPart": "sand-talk",
+    "order": 5,
+    "path": "en/conversation/sand-talk.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "Thanksgiving",
+    "slug": "/en/conversation/thanksgiving",
+    "rawSlug": "/conversation/thanksgiving",
+    "slugPart": "thanksgiving",
+    "order": 1,
+    "path": "en/conversation/thanksgiving.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "conversation",
+    "title": "True Voice",
+    "slug": "/en/conversation/true-voice",
+    "rawSlug": "/conversation/true-voice",
+    "slugPart": "true-voice",
+    "order": 4,
+    "path": "en/conversation/true-voice.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Kernel Engineering",
+    "slug": "/en/guiding/engineers",
+    "rawSlug": "/guiding/engineers",
+    "slugPart": "engineers",
+    "order": 10,
+    "path": "en/guiding/engineers/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Navigation",
+    "slug": "/en/guiding/engineers/navigation",
+    "rawSlug": "/guiding/engineers/navigation",
+    "slugPart": "navigation",
+    "order": 11,
+    "path": "en/guiding/engineers/navigation.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Search",
+    "slug": "/en/guiding/engineers/search",
+    "rawSlug": "/guiding/engineers/search",
+    "slugPart": "search",
+    "order": 12,
+    "path": "en/guiding/engineers/search.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Translations",
+    "slug": "/en/guiding/engineers/translation",
+    "rawSlug": "/guiding/engineers/translation",
+    "slugPart": "translation",
+    "order": 13,
+    "path": "en/guiding/engineers/translation.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Kernel Guides",
+    "slug": "/en/guiding/guides",
+    "rawSlug": "/guiding/guides",
+    "slugPart": "guides",
+    "order": 0,
+    "path": "en/guiding/guides/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Interviews",
+    "slug": "/en/guiding/guides/interviews",
+    "rawSlug": "/guiding/guides/interviews",
+    "slugPart": "interviews",
+    "order": 1,
+    "path": "en/guiding/guides/interviews.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Juntos",
+    "slug": "/en/guiding/guides/juntos",
+    "rawSlug": "/guiding/guides/juntos",
+    "slugPart": "juntos",
+    "order": 2,
+    "path": "en/guiding/guides/juntos.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Mentors",
+    "slug": "/en/guiding/guides/mentors",
+    "rawSlug": "/guiding/guides/mentors",
+    "slugPart": "mentors",
+    "order": 3,
+    "path": "en/guiding/guides/mentors.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Guides",
+    "slug": "/en/guiding",
+    "rawSlug": "/guiding",
+    "slugPart": "guiding",
+    "order": 0,
+    "path": "en/guiding/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Privacy Policy",
+    "slug": "/en/guiding/privacy",
+    "rawSlug": "/guiding/privacy",
+    "slugPart": "privacy",
+    "order": null,
+    "path": "en/guiding/privacy.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Terms of Service",
+    "slug": "/en/guiding/terms-of-service",
+    "rawSlug": "/guiding/terms-of-service",
+    "slugPart": "terms-of-service",
+    "order": null,
+    "path": "en/guiding/terms-of-service.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Frontmatter",
+    "slug": "/en/guiding/writers/frontmatter",
+    "rawSlug": "/guiding/writers/frontmatter",
+    "slugPart": "frontmatter",
+    "order": 3,
+    "path": "en/guiding/writers/frontmatter.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "How To Use Kernel",
+    "slug": "/en/guiding/writers/how-to",
+    "rawSlug": "/guiding/writers/how-to",
+    "slugPart": "how-to",
+    "order": 2,
+    "path": "en/guiding/writers/how-to.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Kernel Writing",
+    "slug": "/en/guiding/writers",
+    "rawSlug": "/guiding/writers",
+    "slugPart": "writers",
+    "order": 1,
+    "path": "en/guiding/writers/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Component Palette",
+    "slug": "/en/guiding/writers/recipes/components",
+    "rawSlug": "/guiding/writers/recipes/components",
+    "slugPart": "components",
+    "order": 6,
+    "path": "en/guiding/writers/recipes/components.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Icon Palette",
+    "slug": "/en/guiding/writers/recipes/icons",
+    "rawSlug": "/guiding/writers/recipes/icons",
+    "slugPart": "icons",
+    "order": 7,
+    "path": "en/guiding/writers/recipes/icons.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Kernel Recipes",
+    "slug": "/en/guiding/writers/recipes",
+    "rawSlug": "/guiding/writers/recipes",
+    "slugPart": "recipes",
+    "order": 5,
+    "path": "en/guiding/writers/recipes/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "guiding",
+    "title": "Translate Kernel",
+    "slug": "/en/guiding/writers/translation",
+    "rawSlug": "/guiding/writers/translation",
+    "slugPart": "translation",
+    "order": 4,
+    "path": "en/guiding/writers/translation.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "index.mdx",
+    "title": "Kernel Community",
+    "slug": "/en",
+    "rawSlug": "/en",
+    "slugPart": "en",
+    "order": null,
+    "path": "en/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "koans",
+    "title": "Question",
+    "slug": "/en/koans",
+    "rawSlug": "/koans",
+    "slugPart": "koans",
+    "order": null,
+    "path": "en/koans/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "koans",
+    "title": "There Will Be Buds",
+    "slug": "/en/koans/module-1",
+    "rawSlug": "/koans/module-1",
+    "slugPart": "module-1",
+    "order": 1,
+    "path": "en/koans/module-1.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "koans",
+    "title": "Meaning Full Truth",
+    "slug": "/en/koans/module-3",
+    "rawSlug": "/koans/module-3",
+    "slugPart": "module-3",
+    "order": 2,
+    "path": "en/koans/module-3.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "koans",
+    "title": "True Heart",
+    "slug": "/en/koans/module-7",
+    "rawSlug": "/koans/module-7",
+    "slugPart": "module-7",
+    "order": 3,
+    "path": "en/koans/module-7.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Learn",
+    "slug": "/en/learn",
+    "rawSlug": "/learn",
+    "slugPart": "learn",
+    "order": null,
+    "path": "en/learn/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Try Listening",
+    "slug": "/en/learn/module-0/conversation",
+    "rawSlug": "/learn/module-0/conversation",
+    "slugPart": "conversation",
+    "order": 5,
+    "path": "en/learn/module-0/conversation.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Introduction to Kernel",
+    "slug": "/en/learn/module-0",
+    "rawSlug": "/learn/module-0",
+    "slugPart": "module-0",
+    "order": 0,
+    "path": "en/learn/module-0/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Money Talks",
+    "slug": "/en/learn/module-0/money-language",
+    "rawSlug": "/learn/module-0/money-language",
+    "slugPart": "money-language",
+    "order": 3,
+    "path": "en/learn/module-0/money-language.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "🌈 The Play of Pattern",
+    "slug": "/en/learn/module-0/play-of-pattern",
+    "rawSlug": "/learn/module-0/play-of-pattern",
+    "slugPart": "play-of-pattern",
+    "order": 1,
+    "path": "en/learn/module-0/play-of-pattern.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "With Love",
+    "slug": "/en/learn/module-0/purpose",
+    "rawSlug": "/learn/module-0/purpose",
+    "slugPart": "purpose",
+    "order": 6,
+    "path": "en/learn/module-0/purpose.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "✍️ Trust",
+    "slug": "/en/learn/module-0/trust",
+    "rawSlug": "/learn/module-0/trust",
+    "slugPart": "trust",
+    "order": 2,
+    "path": "en/learn/module-0/trust.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "In Weird Ways",
+    "slug": "/en/learn/module-0/weird-ways",
+    "rawSlug": "/learn/module-0/weird-ways",
+    "slugPart": "weird-ways",
+    "order": 4,
+    "path": "en/learn/module-0/weird-ways.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Dreamers Of",
+    "slug": "/en/learn/module-1/dreamers",
+    "rawSlug": "/learn/module-1/dreamers",
+    "slugPart": "dreamers",
+    "order": 5,
+    "path": "en/learn/module-1/dreamers.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 1",
+    "slug": "/en/learn/module-1",
+    "rawSlug": "/learn/module-1",
+    "slugPart": "module-1",
+    "order": 0,
+    "path": "en/learn/module-1/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Joyful Subversion",
+    "slug": "/en/learn/module-1/joyful-subversion",
+    "rawSlug": "/learn/module-1/joyful-subversion",
+    "slugPart": "joyful-subversion",
+    "order": 6,
+    "path": "en/learn/module-1/joyful-subversion.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "🤯 Meaning",
+    "slug": "/en/learn/module-1/meaning",
+    "rawSlug": "/learn/module-1/meaning",
+    "slugPart": "meaning",
+    "order": 1,
+    "path": "en/learn/module-1/meaning.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Shaping",
+    "slug": "/en/learn/module-1/playdough-protocols",
+    "rawSlug": "/learn/module-1/playdough-protocols",
+    "slugPart": "playdough-protocols",
+    "order": 3,
+    "path": "en/learn/module-1/playdough-protocols.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Ethereum's",
+    "slug": "/en/learn/module-1/understanding-ethereum",
+    "rawSlug": "/learn/module-1/understanding-ethereum",
+    "slugPart": "understanding-ethereum",
+    "order": 4,
+    "path": "en/learn/module-1/understanding-ethereum.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "💯 Value",
+    "slug": "/en/learn/module-1/value",
+    "rawSlug": "/learn/module-1/value",
+    "slugPart": "value",
+    "order": 2,
+    "path": "en/learn/module-1/value.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "In Pyramids?",
+    "slug": "/en/learn/module-2/banking",
+    "rawSlug": "/learn/module-2/banking",
+    "slugPart": "banking",
+    "order": 5,
+    "path": "en/learn/module-2/banking.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "⁉️ Ask",
+    "slug": "/en/learn/module-2/better-questions",
+    "rawSlug": "/learn/module-2/better-questions",
+    "slugPart": "better-questions",
+    "order": 1,
+    "path": "en/learn/module-2/better-questions.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Debt",
+    "slug": "/en/learn/module-2/debt",
+    "rawSlug": "/learn/module-2/debt",
+    "slugPart": "debt",
+    "order": 4,
+    "path": "en/learn/module-2/debt.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Engineer Better Solutions!",
+    "slug": "/en/learn/module-2/engineering",
+    "rawSlug": "/learn/module-2/engineering",
+    "slugPart": "engineering",
+    "order": 6,
+    "path": "en/learn/module-2/engineering.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 2",
+    "slug": "/en/learn/module-2",
+    "rawSlug": "/learn/module-2",
+    "slugPart": "module-2",
+    "order": 0,
+    "path": "en/learn/module-2/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "💸 Speak",
+    "slug": "/en/learn/module-2/money-speech",
+    "rawSlug": "/learn/module-2/money-speech",
+    "slugPart": "money-speech",
+    "order": 2,
+    "path": "en/learn/module-2/money-speech.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Collecting",
+    "slug": "/en/learn/module-2/shelling-out",
+    "rawSlug": "/learn/module-2/shelling-out",
+    "slugPart": "shelling-out",
+    "order": 3,
+    "path": "en/learn/module-2/shelling-out.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "🦄 Freedom",
+    "slug": "/en/learn/module-3/freedom",
+    "rawSlug": "/learn/module-3/freedom",
+    "slugPart": "freedom",
+    "order": 2,
+    "path": "en/learn/module-3/freedom.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "With Humility",
+    "slug": "/en/learn/module-3/humility",
+    "rawSlug": "/learn/module-3/humility",
+    "slugPart": "humility",
+    "order": 6,
+    "path": "en/learn/module-3/humility.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 3",
+    "slug": "/en/learn/module-3",
+    "rawSlug": "/learn/module-3",
+    "slugPart": "module-3",
+    "order": 0,
+    "path": "en/learn/module-3/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "🔍 Intention",
+    "slug": "/en/learn/module-3/intention",
+    "rawSlug": "/learn/module-3/intention",
+    "slugPart": "intention",
+    "order": 1,
+    "path": "en/learn/module-3/intention.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Lock It Open",
+    "slug": "/en/learn/module-3/lock-it-open",
+    "rawSlug": "/learn/module-3/lock-it-open",
+    "slugPart": "lock-it-open",
+    "order": 5,
+    "path": "en/learn/module-3/lock-it-open.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Remember",
+    "slug": "/en/learn/module-3/remember",
+    "rawSlug": "/learn/module-3/remember",
+    "slugPart": "remember",
+    "order": 3,
+    "path": "en/learn/module-3/remember.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "The Present Time",
+    "slug": "/en/learn/module-3/time",
+    "rawSlug": "/learn/module-3/time",
+    "slugPart": "time",
+    "order": 4,
+    "path": "en/learn/module-3/time.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Transform",
+    "slug": "/en/learn/module-4/art",
+    "rawSlug": "/learn/module-4/art",
+    "slugPart": "art",
+    "order": 3,
+    "path": "en/learn/module-4/art.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Consensus",
+    "slug": "/en/learn/module-4/consensus",
+    "rawSlug": "/learn/module-4/consensus",
+    "slugPart": "consensus",
+    "order": 4,
+    "path": "en/learn/module-4/consensus.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "👑 Govern Yourself",
+    "slug": "/en/learn/module-4/governance",
+    "rawSlug": "/learn/module-4/governance",
+    "slugPart": "governance",
+    "order": 1,
+    "path": "en/learn/module-4/governance.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 4",
+    "slug": "/en/learn/module-4",
+    "rawSlug": "/learn/module-4",
+    "slugPart": "module-4",
+    "order": 0,
+    "path": "en/learn/module-4/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "➕ Radically",
+    "slug": "/en/learn/module-4/liberal-radical",
+    "rawSlug": "/learn/module-4/liberal-radical",
+    "slugPart": "liberal-radical",
+    "order": 2,
+    "path": "en/learn/module-4/liberal-radical.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "By Inventing",
+    "slug": "/en/learn/module-4/self-enquiry",
+    "rawSlug": "/learn/module-4/self-enquiry",
+    "slugPart": "self-enquiry",
+    "order": 5,
+    "path": "en/learn/module-4/self-enquiry.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Paradise",
+    "slug": "/en/learn/module-4/the-garden",
+    "rawSlug": "/learn/module-4/the-garden",
+    "slugPart": "the-garden",
+    "order": 6,
+    "path": "en/learn/module-4/the-garden.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Unbounded Search",
+    "slug": "/en/learn/module-5/amazon-unbounded-search",
+    "rawSlug": "/learn/module-5/amazon-unbounded-search",
+    "slugPart": "amazon-unbounded-search",
+    "order": 3,
+    "path": "en/learn/module-5/amazon-unbounded-search.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "👨‍👩‍👧‍👦 Incentivize",
+    "slug": "/en/learn/module-5/incentives",
+    "rawSlug": "/learn/module-5/incentives",
+    "slugPart": "incentives",
+    "order": 1,
+    "path": "en/learn/module-5/incentives.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 5",
+    "slug": "/en/learn/module-5",
+    "rawSlug": "/learn/module-5",
+    "slugPart": "module-5",
+    "order": 0,
+    "path": "en/learn/module-5/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "👂 Listening",
+    "slug": "/en/learn/module-5/listening-stories",
+    "rawSlug": "/learn/module-5/listening-stories",
+    "slugPart": "listening-stories",
+    "order": 2,
+    "path": "en/learn/module-5/listening-stories.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Of Prosocial Value",
+    "slug": "/en/learn/module-5/prosocial-value",
+    "rawSlug": "/learn/module-5/prosocial-value",
+    "slugPart": "prosocial-value",
+    "order": 6,
+    "path": "en/learn/module-5/prosocial-value.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Reveals Universes",
+    "slug": "/en/learn/module-5/reveal-the-universe",
+    "rawSlug": "/learn/module-5/reveal-the-universe",
+    "slugPart": "reveal-the-universe",
+    "order": 5,
+    "path": "en/learn/module-5/reveal-the-universe.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Through Narrative",
+    "slug": "/en/learn/module-5/the-peoples-narrative",
+    "rawSlug": "/learn/module-5/the-peoples-narrative",
+    "slugPart": "the-peoples-narrative",
+    "order": 4,
+    "path": "en/learn/module-5/the-peoples-narrative.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "👮 Uncensored",
+    "slug": "/en/learn/module-6/censorship-resistance",
+    "rawSlug": "/learn/module-6/censorship-resistance",
+    "slugPart": "censorship-resistance",
+    "order": 1,
+    "path": "en/learn/module-6/censorship-resistance.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Deep Song",
+    "slug": "/en/learn/module-6/duende",
+    "rawSlug": "/learn/module-6/duende",
+    "slugPart": "duende",
+    "order": 6,
+    "path": "en/learn/module-6/duende.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 6",
+    "slug": "/en/learn/module-6",
+    "rawSlug": "/learn/module-6",
+    "slugPart": "module-6",
+    "order": 0,
+    "path": "en/learn/module-6/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Principled",
+    "slug": "/en/learn/module-6/inventing-on-principle",
+    "rawSlug": "/learn/module-6/inventing-on-principle",
+    "slugPart": "inventing-on-principle",
+    "order": 5,
+    "path": "en/learn/module-6/inventing-on-principle.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "🎓 Learning",
+    "slug": "/en/learn/module-6/learn",
+    "rawSlug": "/learn/module-6/learn",
+    "slugPart": "learn",
+    "order": 2,
+    "path": "en/learn/module-6/learn.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Participate In",
+    "slug": "/en/learn/module-6/participate",
+    "rawSlug": "/learn/module-6/participate",
+    "slugPart": "participate",
+    "order": 4,
+    "path": "en/learn/module-6/participate.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Serenely",
+    "slug": "/en/learn/module-6/serenity",
+    "rawSlug": "/learn/module-6/serenity",
+    "slugPart": "serenity",
+    "order": 3,
+    "path": "en/learn/module-6/serenity.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "💝 Giving",
+    "slug": "/en/learn/module-7/giving",
+    "rawSlug": "/learn/module-7/giving",
+    "slugPart": "giving",
+    "order": 1,
+    "path": "en/learn/module-7/giving.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module 7",
+    "slug": "/en/learn/module-7",
+    "rawSlug": "/learn/module-7",
+    "slugPart": "module-7",
+    "order": 0,
+    "path": "en/learn/module-7/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Of No Paradigm",
+    "slug": "/en/learn/module-7/no-paradigm",
+    "rawSlug": "/learn/module-7/no-paradigm",
+    "slugPart": "no-paradigm",
+    "order": 4,
+    "path": "en/learn/module-7/no-paradigm.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Is Perfection",
+    "slug": "/en/learn/module-7/perfection",
+    "rawSlug": "/learn/module-7/perfection",
+    "slugPart": "perfection",
+    "order": 5,
+    "path": "en/learn/module-7/perfection.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "🏊 Scale-ability",
+    "slug": "/en/learn/module-7/scale-ability",
+    "rawSlug": "/learn/module-7/scale-ability",
+    "slugPart": "scale-ability",
+    "order": 2,
+    "path": "en/learn/module-7/scale-ability.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "The Gift",
+    "slug": "/en/learn/module-7/the-gift",
+    "rawSlug": "/learn/module-7/the-gift",
+    "slugPart": "the-gift",
+    "order": 3,
+    "path": "en/learn/module-7/the-gift.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Beautiful Homes",
+    "slug": "/en/learn/module-metta/beautiful-homes",
+    "rawSlug": "/learn/module-metta/beautiful-homes",
+    "slugPart": "beautiful-homes",
+    "order": 5,
+    "path": "en/learn/module-metta/beautiful-homes.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Build Native Altars",
+    "slug": "/en/learn/module-metta/build-native-altars",
+    "rawSlug": "/learn/module-metta/build-native-altars",
+    "slugPart": "build-native-altars",
+    "order": 3,
+    "path": "en/learn/module-metta/build-native-altars.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Module Mettā",
+    "slug": "/en/learn/module-metta",
+    "rawSlug": "/learn/module-metta",
+    "slugPart": "module-metta",
+    "order": 1,
+    "path": "en/learn/module-metta/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Realise Love",
+    "slug": "/en/learn/module-metta/relating-kernel",
+    "rawSlug": "/learn/module-metta/relating-kernel",
+    "slugPart": "relating-kernel",
+    "order": 6,
+    "path": "en/learn/module-metta/relating-kernel.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "School Sucks",
+    "slug": "/en/learn/module-metta/school-sucks",
+    "rawSlug": "/learn/module-metta/school-sucks",
+    "slugPart": "school-sucks",
+    "order": 2,
+    "path": "en/learn/module-metta/school-sucks.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "learn",
+    "title": "Start Small",
+    "slug": "/en/learn/module-metta/start-small",
+    "rawSlug": "/learn/module-metta/start-small",
+    "slugPart": "start-small",
+    "order": 4,
+    "path": "en/learn/module-metta/start-small.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "resources",
+    "title": "Culture",
+    "slug": "/en/resources/culture",
+    "rawSlug": "/resources/culture",
+    "slugPart": "culture",
+    "order": 5,
+    "path": "en/resources/culture.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "resources",
+    "title": "Design & UX",
+    "slug": "/en/resources/design-ux",
+    "rawSlug": "/resources/design-ux",
+    "slugPart": "design-ux",
+    "order": 1,
+    "path": "en/resources/design-ux.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "resources",
+    "title": "Development",
+    "slug": "/en/resources/development",
+    "rawSlug": "/resources/development",
+    "slugPart": "development",
+    "order": 2,
+    "path": "en/resources/development.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "resources",
+    "title": "Resources",
+    "slug": "/en/resources",
+    "rawSlug": "/resources",
+    "slugPart": "resources",
+    "order": null,
+    "path": "en/resources/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "resources",
+    "title": "Research",
+    "slug": "/en/resources/research",
+    "rawSlug": "/resources/research",
+    "slugPart": "research",
+    "order": 4,
+    "path": "en/resources/research.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "resources",
+    "title": "Security",
+    "slug": "/en/resources/security",
+    "rawSlug": "/resources/security",
+    "slugPart": "security",
+    "order": 3,
+    "path": "en/resources/security.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "start",
+    "title": "Conducting Code",
+    "slug": "/en/start/code-of-conduct",
+    "rawSlug": "/start/code-of-conduct",
+    "slugPart": "code-of-conduct",
+    "order": 1,
+    "path": "en/start/code-of-conduct.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "start",
+    "title": "FAQs",
+    "slug": "/en/start/faq",
+    "rawSlug": "/start/faq",
+    "slugPart": "faq",
+    "order": 4,
+    "path": "en/start/faq.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "start",
+    "title": "Free Learning",
+    "slug": "/en/start/free-learning",
+    "rawSlug": "/start/free-learning",
+    "slugPart": "free-learning",
+    "order": 3,
+    "path": "en/start/free-learning.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "start",
+    "title": "Guide",
+    "slug": "/en/start/how-to-use",
+    "rawSlug": "/start/how-to-use",
+    "slugPart": "how-to-use",
+    "order": 2,
+    "path": "en/start/how-to-use.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "start",
+    "title": "Start",
+    "slug": "/en/start",
+    "rawSlug": "/start",
+    "slugPart": "start",
+    "order": null,
+    "path": "en/start/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "start",
+    "title": "Principled People",
+    "slug": "/en/start/principled-people",
+    "rawSlug": "/start/principled-people",
+    "slugPart": "principled-people",
+    "order": 0,
+    "path": "en/start/principled-people.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Tokens",
+    "slug": "/en/tokens",
+    "rawSlug": "/tokens",
+    "slugPart": "tokens",
+    "order": null,
+    "path": "en/tokens/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Dap.ps",
+    "slug": "/en/tokens/token-studies/dap-ps",
+    "rawSlug": "/tokens/token-studies/dap-ps",
+    "slugPart": "dap-ps",
+    "order": 5,
+    "path": "en/tokens/token-studies/dap-ps.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Free Learn",
+    "slug": "/en/tokens/token-studies/free-learn",
+    "rawSlug": "/tokens/token-studies/free-learn",
+    "slugPart": "free-learn",
+    "order": 8,
+    "path": "en/tokens/token-studies/free-learn/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Free Learnings",
+    "slug": "/en/tokens/token-studies/free-learn/learnings",
+    "rawSlug": "/tokens/token-studies/free-learn/learnings",
+    "slugPart": "learnings",
+    "order": 10,
+    "path": "en/tokens/token-studies/free-learn/learnings.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "OG Paper",
+    "slug": "/en/tokens/token-studies/free-learn/og-paper",
+    "rawSlug": "/tokens/token-studies/free-learn/og-paper",
+    "slugPart": "og-paper",
+    "order": 9,
+    "path": "en/tokens/token-studies/free-learn/og-paper.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Technical Spec",
+    "slug": "/en/tokens/token-studies/free-learn/spec",
+    "rawSlug": "/tokens/token-studies/free-learn/spec",
+    "slugPart": "spec",
+    "order": 11,
+    "path": "en/tokens/token-studies/free-learn/spec.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Honour",
+    "slug": "/en/tokens/token-studies/honour",
+    "rawSlug": "/tokens/token-studies/honour",
+    "slugPart": "honour",
+    "order": 9,
+    "path": "en/tokens/token-studies/honour.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Case Studies",
+    "slug": "/en/tokens/token-studies",
+    "rawSlug": "/tokens/token-studies",
+    "slugPart": "token-studies",
+    "order": 1,
+    "path": "en/tokens/token-studies/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Maker Difference",
+    "slug": "/en/tokens/token-studies/maker-difference",
+    "rawSlug": "/tokens/token-studies/maker-difference",
+    "slugPart": "maker-difference",
+    "order": 1,
+    "path": "en/tokens/token-studies/maker-difference.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Community Life",
+    "slug": "/en/tokens/token-studies/pan",
+    "rawSlug": "/tokens/token-studies/pan",
+    "slugPart": "pan",
+    "order": 4,
+    "path": "en/tokens/token-studies/pan.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "The Money God",
+    "slug": "/en/tokens/token-studies/rai",
+    "rawSlug": "/tokens/token-studies/rai",
+    "slugPart": "rai",
+    "order": 2,
+    "path": "en/tokens/token-studies/rai.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Restoring Justice",
+    "slug": "/en/tokens/token-studies/restoring-justice",
+    "rawSlug": "/tokens/token-studies/restoring-justice",
+    "slugPart": "restoring-justice",
+    "order": 7,
+    "path": "en/tokens/token-studies/restoring-justice.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Rocket Pool",
+    "slug": "/en/tokens/token-studies/rocket-pool",
+    "rawSlug": "/tokens/token-studies/rocket-pool",
+    "slugPart": "rocket-pool",
+    "order": 3,
+    "path": "en/tokens/token-studies/rocket-pool.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Signature Economies",
+    "slug": "/en/tokens/token-studies/signature-economies",
+    "rawSlug": "/tokens/token-studies/signature-economies",
+    "slugPart": "signature-economies",
+    "order": 6,
+    "path": "en/tokens/token-studies/signature-economies.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Adaptive Sharing",
+    "slug": "/en/tokens/tokenomics/adaptive-sharing",
+    "rawSlug": "/tokens/tokenomics/adaptive-sharing",
+    "slugPart": "adaptive-sharing",
+    "order": 5,
+    "path": "en/tokens/tokenomics/adaptive-sharing.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Communal Treasure",
+    "slug": "/en/tokens/tokenomics/communal-treasure",
+    "rawSlug": "/tokens/tokenomics/communal-treasure",
+    "slugPart": "communal-treasure",
+    "order": 5,
+    "path": "en/tokens/tokenomics/communal-treasure.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Flying High",
+    "slug": "/en/tokens/tokenomics/flying-high",
+    "rawSlug": "/tokens/tokenomics/flying-high",
+    "slugPart": "flying-high",
+    "order": 6,
+    "path": "en/tokens/tokenomics/flying-high.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Community Research",
+    "slug": "/en/tokens/tokenomics",
+    "rawSlug": "/tokens/tokenomics",
+    "slugPart": "tokenomics",
+    "order": 2,
+    "path": "en/tokens/tokenomics/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Magic Maths",
+    "slug": "/en/tokens/tokenomics/math",
+    "rawSlug": "/tokens/tokenomics/math",
+    "slugPart": "math",
+    "order": 7,
+    "path": "en/tokens/tokenomics/math.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Mounting Up",
+    "slug": "/en/tokens/tokenomics/mounting-up",
+    "rawSlug": "/tokens/tokenomics/mounting-up",
+    "slugPart": "mounting-up",
+    "order": 4,
+    "path": "en/tokens/tokenomics/mounting-up.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Meaningful Nouns",
+    "slug": "/en/tokens/tokenomics/nouns",
+    "rawSlug": "/tokens/tokenomics/nouns",
+    "slugPart": "nouns",
+    "order": 8,
+    "path": "en/tokens/tokenomics/nouns.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Ocean Curves",
+    "slug": "/en/tokens/tokenomics/ocean-curves",
+    "rawSlug": "/tokens/tokenomics/ocean-curves",
+    "slugPart": "ocean-curves",
+    "order": 11,
+    "path": "en/tokens/tokenomics/ocean-curves.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Regenerative Commons",
+    "slug": "/en/tokens/tokenomics/regenerative-commons",
+    "rawSlug": "/tokens/tokenomics/regenerative-commons",
+    "slugPart": "regenerative-commons",
+    "order": 9,
+    "path": "en/tokens/tokenomics/regenerative-commons.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "tokens",
+    "title": "Shared Wisdom",
+    "slug": "/en/tokens/tokenomics/shared-wisdom",
+    "rawSlug": "/tokens/tokenomics/shared-wisdom",
+    "slugPart": "shared-wisdom",
+    "order": 10,
+    "path": "en/tokens/tokenomics/shared-wisdom.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Play",
+    "slug": "/en/track-gaming",
+    "rawSlug": "/track-gaming",
+    "slugPart": "track-gaming",
+    "order": null,
+    "path": "en/track-gaming/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-0/crafted",
+    "rawSlug": "/track-gaming/module-0/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-0/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-0/curated",
+    "rawSlug": "/track-gaming/module-0/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-0/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 0",
+    "slug": "/en/track-gaming/module-0",
+    "rawSlug": "/track-gaming/module-0",
+    "slugPart": "module-0",
+    "order": 0,
+    "path": "en/track-gaming/module-0/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-1/crafted",
+    "rawSlug": "/track-gaming/module-1/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-1/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-1/curated",
+    "rawSlug": "/track-gaming/module-1/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-1/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 1",
+    "slug": "/en/track-gaming/module-1",
+    "rawSlug": "/track-gaming/module-1",
+    "slugPart": "module-1",
+    "order": 1,
+    "path": "en/track-gaming/module-1/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-2/crafted",
+    "rawSlug": "/track-gaming/module-2/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-2/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-2/curated",
+    "rawSlug": "/track-gaming/module-2/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-2/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 2",
+    "slug": "/en/track-gaming/module-2",
+    "rawSlug": "/track-gaming/module-2",
+    "slugPart": "module-2",
+    "order": 2,
+    "path": "en/track-gaming/module-2/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-3/crafted",
+    "rawSlug": "/track-gaming/module-3/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-3/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-3/curated",
+    "rawSlug": "/track-gaming/module-3/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-3/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 3",
+    "slug": "/en/track-gaming/module-3",
+    "rawSlug": "/track-gaming/module-3",
+    "slugPart": "module-3",
+    "order": 3,
+    "path": "en/track-gaming/module-3/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-4/crafted",
+    "rawSlug": "/track-gaming/module-4/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-4/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-4/curated",
+    "rawSlug": "/track-gaming/module-4/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-4/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 4",
+    "slug": "/en/track-gaming/module-4",
+    "rawSlug": "/track-gaming/module-4",
+    "slugPart": "module-4",
+    "order": 4,
+    "path": "en/track-gaming/module-4/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-5/crafted",
+    "rawSlug": "/track-gaming/module-5/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-5/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-5/curated",
+    "rawSlug": "/track-gaming/module-5/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-5/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 5",
+    "slug": "/en/track-gaming/module-5",
+    "rawSlug": "/track-gaming/module-5",
+    "slugPart": "module-5",
+    "order": 5,
+    "path": "en/track-gaming/module-5/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Crafted",
+    "slug": "/en/track-gaming/module-6/crafted",
+    "rawSlug": "/track-gaming/module-6/crafted",
+    "slugPart": "crafted",
+    "order": 1,
+    "path": "en/track-gaming/module-6/crafted.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Curated",
+    "slug": "/en/track-gaming/module-6/curated",
+    "rawSlug": "/track-gaming/module-6/curated",
+    "slugPart": "curated",
+    "order": 2,
+    "path": "en/track-gaming/module-6/curated.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Module 6",
+    "slug": "/en/track-gaming/module-6",
+    "rawSlug": "/track-gaming/module-6",
+    "slugPart": "module-6",
+    "order": 6,
+    "path": "en/track-gaming/module-6/index.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Collected Examples",
+    "slug": "/en/track-gaming/x-genesis/collected",
+    "rawSlug": "/track-gaming/x-genesis/collected",
+    "slugPart": "collected",
+    "order": 2,
+    "path": "en/track-gaming/x-genesis/collected.mdx"
+  },
+  {
+    "locale": "en",
+    "topSection": "track-gaming",
+    "title": "Genesis",
+    "slug": "/en/track-gaming/x-genesis",
+    "rawSlug": "/track-gaming/x-genesis",
+    "slugPart": "x-genesis",
+    "order": 7,
+    "path": "en/track-gaming/x-genesis/index.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "build",
+    "title": "Siendo más lista que los contratos",
+    "slug": "/es/build/outsmarting-contracts",
+    "rawSlug": "/build/outsmarting-contracts",
+    "slugPart": "outsmarting-contracts",
+    "order": 1,
+    "path": "es/build/outsmarting-contracts/index.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "build",
+    "title": "Levantando el velo",
+    "slug": "/es/build/outsmarting-contracts/lifting-the-veil",
+    "rawSlug": "/build/outsmarting-contracts/lifting-the-veil",
+    "slugPart": "lifting-the-veil",
+    "order": 1,
+    "path": "es/build/outsmarting-contracts/lifting-the-veil.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "build",
+    "title": "Orden aleatorio",
+    "slug": "/es/build/outsmarting-contracts/random-order",
+    "rawSlug": "/build/outsmarting-contracts/random-order",
+    "slugPart": "random-order",
+    "order": 2,
+    "path": "es/build/outsmarting-contracts/random-order.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "build",
+    "title": "Volviendo a entrar al reino",
+    "slug": "/es/build/outsmarting-contracts/reenter-the-kingdom",
+    "rawSlug": "/build/outsmarting-contracts/reenter-the-kingdom",
+    "slugPart": "reenter-the-kingdom",
+    "order": 4,
+    "path": "es/build/outsmarting-contracts/reenter-the-kingdom.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "build",
+    "title": "La verdadera tienda",
+    "slug": "/es/build/outsmarting-contracts/true-store",
+    "rawSlug": "/build/outsmarting-contracts/true-store",
+    "slugPart": "true-store",
+    "order": 3,
+    "path": "es/build/outsmarting-contracts/true-store.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Ingeniosamente",
+    "slug": "/es/learn/module-0/conversation",
+    "rawSlug": "/learn/module-0/conversation",
+    "slugPart": "conversation",
+    "order": 4,
+    "path": "es/learn/module-0/conversation.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Introducción a Kernel",
+    "slug": "/es/learn/module-0",
+    "rawSlug": "/learn/module-0",
+    "slugPart": "module-0",
+    "order": 0,
+    "path": "es/learn/module-0/index.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "El dinero habla",
+    "slug": "/es/learn/module-0/money-language",
+    "rawSlug": "/learn/module-0/money-language",
+    "slugPart": "money-language",
+    "order": 3,
+    "path": "es/learn/module-0/money-language.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "🌈 Juego de Patrones",
+    "slug": "/es/learn/module-0/play-of-pattern",
+    "rawSlug": "/learn/module-0/play-of-pattern",
+    "slugPart": "play-of-pattern",
+    "order": 1,
+    "path": "es/learn/module-0/play-of-pattern.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Con propósito y amor",
+    "slug": "/es/learn/module-0/purpose",
+    "rawSlug": "/learn/module-0/purpose",
+    "slugPart": "purpose",
+    "order": 5,
+    "path": "es/learn/module-0/purpose.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "✍️ Confianza",
+    "slug": "/es/learn/module-0/trust",
+    "rawSlug": "/learn/module-0/trust",
+    "slugPart": "trust",
+    "order": 2,
+    "path": "es/learn/module-0/trust.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Soñadoras de",
+    "slug": "/es/learn/module-1/dreamers",
+    "rawSlug": "/learn/module-1/dreamers",
+    "slugPart": "dreamers",
+    "order": 5,
+    "path": "es/learn/module-1/dreamers.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Módulo 1",
+    "slug": "/es/learn/module-1",
+    "rawSlug": "/learn/module-1",
+    "slugPart": "module-1",
+    "order": 0,
+    "path": "es/learn/module-1/index.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Subversión Alegre",
+    "slug": "/es/learn/module-1/joyful-subversion",
+    "rawSlug": "/learn/module-1/joyful-subversion",
+    "slugPart": "joyful-subversion",
+    "order": 6,
+    "path": "es/learn/module-1/joyful-subversion.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "🤯 Significado",
+    "slug": "/es/learn/module-1/meaning",
+    "rawSlug": "/learn/module-1/meaning",
+    "slugPart": "meaning",
+    "order": 1,
+    "path": "es/learn/module-1/meaning.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Formación",
+    "slug": "/es/learn/module-1/playdough-protocols",
+    "rawSlug": "/learn/module-1/playdough-protocols",
+    "slugPart": "playdough-protocols",
+    "order": 3,
+    "path": "es/learn/module-1/playdough-protocols.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "Ethereum",
+    "slug": "/es/learn/module-1/understanding-ethereum",
+    "rawSlug": "/learn/module-1/understanding-ethereum",
+    "slugPart": "understanding-ethereum",
+    "order": 4,
+    "path": "es/learn/module-1/understanding-ethereum.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "💯 Valor",
+    "slug": "/es/learn/module-1/value",
+    "rawSlug": "/learn/module-1/value",
+    "slugPart": "value",
+    "order": 2,
+    "path": "es/learn/module-1/value.mdx"
+  },
+  {
+    "locale": "es",
+    "topSection": "learn",
+    "title": "⁉️ Preguntar",
+    "slug": "/es/learn/module-2/better-questions",
+    "rawSlug": "/learn/module-2/better-questions",
+    "slugPart": "better-questions",
+    "order": 1,
+    "path": "es/learn/module-2/better-questions.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "index.mdx",
+    "title": "Communauté Kernel",
+    "slug": "/fr",
+    "rawSlug": "/fr",
+    "slugPart": "fr",
+    "order": null,
+    "path": "fr/index.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "resources",
+    "title": "Culture",
+    "slug": "/fr/resources/culture",
+    "rawSlug": "/resources/culture",
+    "slugPart": "culture",
+    "order": 5,
+    "path": "fr/resources/culture.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "resources",
+    "title": "Design & UX",
+    "slug": "/fr/resources/design-ux",
+    "rawSlug": "/resources/design-ux",
+    "slugPart": "design-ux",
+    "order": 1,
+    "path": "fr/resources/design-ux.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "resources",
+    "title": "Développement",
+    "slug": "/fr/resources/development",
+    "rawSlug": "/resources/development",
+    "slugPart": "development",
+    "order": 2,
+    "path": "fr/resources/development.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "resources",
+    "title": "Ressources",
+    "slug": "/fr/resources",
+    "rawSlug": "/resources",
+    "slugPart": "resources",
+    "order": null,
+    "path": "fr/resources/index.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "resources",
+    "title": "Recherche",
+    "slug": "/fr/resources/research",
+    "rawSlug": "/resources/research",
+    "slugPart": "research",
+    "order": 4,
+    "path": "fr/resources/research.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "resources",
+    "title": "Securité",
+    "slug": "/fr/resources/security",
+    "rawSlug": "/resources/security",
+    "slugPart": "security",
+    "order": 3,
+    "path": "fr/resources/security.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "start",
+    "title": "FAQ",
+    "slug": "/fr/start/faq",
+    "rawSlug": "/start/faq",
+    "slugPart": "faq",
+    "order": 3,
+    "path": "fr/start/faq.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "start",
+    "title": "Apprentissage gratuit",
+    "slug": "/fr/start/free-learning",
+    "rawSlug": "/start/free-learning",
+    "slugPart": "free-learning",
+    "order": 2,
+    "path": "fr/start/free-learning.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "start",
+    "title": "Guide",
+    "slug": "/fr/start/how-to-use",
+    "rawSlug": "/start/how-to-use",
+    "slugPart": "how-to-use",
+    "order": 1,
+    "path": "fr/start/how-to-use.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "start",
+    "title": "Commencer",
+    "slug": "/fr/start",
+    "rawSlug": "/start",
+    "slugPart": "start",
+    "order": null,
+    "path": "fr/start/index.mdx"
+  },
+  {
+    "locale": "fr",
+    "topSection": "start",
+    "title": "Des gens de principes",
+    "slug": "/fr/start/principled-people",
+    "rawSlug": "/start/principled-people",
+    "slugPart": "principled-people",
+    "order": 0,
+    "path": "fr/start/principled-people.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "Learn",
+    "slug": "/pr/learn",
+    "rawSlug": "/learn",
+    "slugPart": "learn",
+    "order": null,
+    "path": "pr/learn/index.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "Artisticamente",
+    "slug": "/pr/learn/module-0/conversation",
+    "rawSlug": "/learn/module-0/conversation",
+    "slugPart": "conversation",
+    "order": 4,
+    "path": "pr/learn/module-0/conversation.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "Introdução ao Kernel",
+    "slug": "/pr/learn/module-0",
+    "rawSlug": "/learn/module-0",
+    "slugPart": "module-0",
+    "order": 0,
+    "path": "pr/learn/module-0/index.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "Conversando sobre dinheiro",
+    "slug": "/pr/learn/module-0/money-language",
+    "rawSlug": "/learn/module-0/money-language",
+    "slugPart": "money-language",
+    "order": 3,
+    "path": "pr/learn/module-0/money-language.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "🌈 O jogo do padrão",
+    "slug": "/pr/learn/module-0/play-of-pattern",
+    "rawSlug": "/learn/module-0/play-of-pattern",
+    "slugPart": "play-of-pattern",
+    "order": 1,
+    "path": "pr/learn/module-0/play-of-pattern.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "Com propósito e amor",
+    "slug": "/pr/learn/module-0/purpose",
+    "rawSlug": "/learn/module-0/purpose",
+    "slugPart": "purpose",
+    "order": 5,
+    "path": "pr/learn/module-0/purpose.mdx"
+  },
+  {
+    "locale": "pr",
+    "topSection": "learn",
+    "title": "✍️ Confiança",
+    "slug": "/pr/learn/module-0/trust",
+    "rawSlug": "/learn/module-0/trust",
+    "slugPart": "trust",
+    "order": 2,
+    "path": "pr/learn/module-0/trust.mdx"
+  }
+]

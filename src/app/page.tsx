@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import KernelPlant from "../../public/kernel-plant.gif";
 import PixelBg from "../../public/pixel.png";
 import Trees from "../../public/trees.png";
@@ -63,12 +64,12 @@ const Navbar = () => {
         <Logo />
       </div>
       <div className="place-self-end">
-      <a href={"https://read.kernel.community/en/learn/module-0/"} className={`group inline-flex flex-col font-medium sm:text-lg text-base`} target="_blank">
+      <Link href={"/en/start"} className={`group inline-flex flex-col font-medium sm:text-lg text-base`}>
         <span className="inline-flex flex-row items-center gap-2">
           Read the Kernel Book <MoveRight />
         </span>
         <div className="bg-primary h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
-      </a>
+      </Link>
       </div>
     </div>
   )
