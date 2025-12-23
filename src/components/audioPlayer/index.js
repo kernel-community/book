@@ -55,7 +55,8 @@ const AudioPlayer = ({ src }) => {
     if (!isAutoplayForbidden) {
       loadAudio()
     }
-  }, [])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAutoplayForbidden])
 
   useEffect(() => {
     const uuid = uuidv4()
@@ -86,7 +87,7 @@ const AudioPlayer = ({ src }) => {
       audio.removeEventListener('loadeddata', setAudioData)
       audio.removeEventListener('timeupdate', setAudioTime)
     }
-  }, [audio, isPlaying, playerId, clickedTime])
+  }, [audio, isPlaying, playerId, clickedTime, currentTime])
 
   return (
     <div sx={styles.container}>

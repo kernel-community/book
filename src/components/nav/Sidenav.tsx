@@ -113,7 +113,7 @@ export default function Sidenav({
         currentLocale,
         "en"
       ),
-    [resolvedPath, currentLocale, currentTopSection]
+    [currentLocale, currentTopSection]
   );
 
   // Filter out items where slugPart matches topSection (these are intermediate nodes created during tree building)

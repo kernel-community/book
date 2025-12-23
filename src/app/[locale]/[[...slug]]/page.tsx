@@ -17,7 +17,7 @@ import { useMDXComponents } from "@/app/mdx-components";
 export default function LocaleContentPage() {
   const params = useParams();
   const locale = (params?.locale as string) || "en";
-  const slugParts = (params?.slug as string[] | undefined) || [];
+  const slugParts = useMemo(() => (params?.slug as string[] | undefined) || [], [params?.slug]);
 
   const topSection = slugParts[0] || "start";
   const activePath = `/${[locale, ...slugParts].join("/") || `${locale}/start`}`;
