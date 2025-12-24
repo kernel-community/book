@@ -8,7 +8,7 @@ import Heading5 from "@/components/ui/heading/Heading5";
 import { Fellows, Projects } from "@/components/Featured";
 import LocaleLink from "@/components/LocaleLink";
 import Callout from "@/components/ui/Callout";
-import HonourConnector from "@/components/honour/HonourConnector";
+import HonourGate from "@/components/honour/HonourGate";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -28,8 +28,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     // Add Fellows and Projects components
     Fellows,
     Projects,
-    // Add Honour connector for money-speech page
-    HonourConnector,
+    // Add Honour gate for gating any content
+    HonourGate,
     // Allow overrides
     ...components,
   };

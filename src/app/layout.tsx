@@ -12,10 +12,10 @@ const libreFranklin = Libre_Franklin({
 
 export const metadata: Metadata = {
   title: "Kernel Community",
-  description: "Cultivating a greater web, together. Applications open for KBX.",
+  description: "Cultivating a greater web, together. Applications open.",
   openGraph: {
     title: 'Kernel Community',
-    description: 'Cultivating a greater web, together. Applications open for KBX.',
+    description: 'Cultivating a greater web, together. Applications open.',
     url: 'https://kernel.community',
     siteName: 'Kernel Community',
     images: [

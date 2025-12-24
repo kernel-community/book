@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Video component: side-by-side layout for consecutive videos on desktop */
+@layer components {
+  /* When a video is immediately followed by another video, make them side-by-side on desktop */
+  /* First video in a pair: 48% width on desktop, inline-block */
+  .prose .video-component:has(+ .video-component) {
+    @apply md:inline-block md:align-top md:w-[48%] md:mr-[2%] md:mb-4;
+  }
+  
+  /* Second video in a pair: 48% width on desktop, inline-block */
+  .prose .video-component + .video-component {
+    @apply md:inline-block md:align-top md:w-[48%] md:mb-4;
+  }
+  
+  /* Clear floats after video pairs */
+  .prose .video-component + .video-component + *:not(.video-component) {
+    @apply md:clear-both;
+  }
+}
+
 @font-face {
   font-family: "MiriamLibre";
   src: url("/fonts/MiriamLibre-Regular.ttf");

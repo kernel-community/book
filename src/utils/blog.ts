@@ -10,6 +10,7 @@ export type BlogPost = {
   date: string;
   image?: string;
   keywords?: string[];
+  recommend?: string[];
 };
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog');
@@ -39,6 +40,7 @@ export function getAllBlogPosts(): BlogPost[] {
       date: data.date || '',
       image: data.image,
       keywords: data.keywords,
+      recommend: data.recommend,
     });
   }
 
@@ -50,3 +52,24 @@ export function getAllBlogPosts(): BlogPost[] {
   });
 }
 
+export function getBlogPostBySlug(slug: string): BlogPost | null {
+  const filePath = path.join(BLOG_DIR, `${slug}.mdx`);
+  
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const { data } = matter(fileContents);
+
+  return {
+    slug,
+    title: data.title || slug,
+    authors: Array.isArray(data.authors) ? data.authors : data.authors ? [data.authors] : [],
+    description: data.description || '',
+    date: data.date || '',
+    image: data.image,
+    keywords: data.keywords,
+    recommend: data.recommend,
+  };
+}

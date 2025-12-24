@@ -1,13 +1,16 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import { useAccount, useReadContract } from "wagmi";
 import { formatEther } from "viem";
 import { HON_CONTRACT_ADDRESS, ERC20_ABI, optimism } from "@/lib/honour";
-import HonourContent from "./HonourContent";
 import HonourButton from "./HonourButton";
 
-const HonourConnector = () => {
+type HonourGateProps = {
+  children: ReactNode;
+};
+
+const HonourGate = ({ children }: HonourGateProps) => {
   const { address, isConnected } = useAccount();
   const [transactionSuccess, setTransactionSuccess] = useState(false);
 
@@ -45,12 +48,16 @@ const HonourConnector = () => {
 
   // Show content if they have HON or if transaction was successful
   if (transactionSuccess || (isConnected && !isLoading && hasHon)) {
-    return <HonourContent balance={formattedBalance} />;
+    return <>{children}</>;
   }
 
   // Show button/modal to get HON
-  return <HonourButton onTransactionSuccess={() => setTransactionSuccess(true)} />;
+  return (
+    <div className="my-8">
+      <HonourButton onTransactionSuccess={() => setTransactionSuccess(true)} />
+    </div>
+  );
 };
 
-export default HonourConnector;
+export default HonourGate;
 

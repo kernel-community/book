@@ -23,5 +23,6 @@ export { default as Video } from "./Video";
 export { default as Image } from "./Image";
 export { default as Aligner } from "./Aligner";
 export { default as AudioPlayer } from "./AudioPlayer";
+export { default as Sound } from "./Sound";
 export * from "./heading";
 

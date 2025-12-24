@@ -1,21 +1,24 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { MDXProvider } from "@mdx-js/react";
 import DocNavbar from "@/components/nav/DocNavbar";
 import Sidenav from "@/components/nav/Sidenav";
 import Footer from "@/components/Footer";
 import LanguageSelector from "@/components/nav/LanguageSelector";
 import BlogIndex from "@/components/blog/BlogIndex";
+import RecommendedPosts from "@/components/blog/RecommendedPosts";
 import contentIndex from "@/data/content-index.json";
 import { contentLoaders } from "@/data/content-loaders";
 import { blogLoaders } from "@/data/blog-loaders";
 import type { ContentEntry } from "@/utils/sidenav";
 import { useMDXComponents } from "@/app/mdx-components";
+import type { BlogPost } from "@/utils/blog";
 
 export default function LocaleContentPage() {
   const params = useParams();
+  const pathname = usePathname();
   const locale = (params?.locale as string) || "en";
   const slugParts = useMemo(() => (params?.slug as string[] | undefined) || [], [params?.slug]);
 
@@ -39,6 +42,7 @@ export default function LocaleContentPage() {
   const [MDXContent, setMDXContent] = useState<React.ComponentType | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentBlogPost, setCurrentBlogPost] = useState<BlogPost | null>(null);
   const mdxComponents = useMDXComponents({});
 
   useEffect(() => {
@@ -53,6 +57,17 @@ export default function LocaleContentPage() {
       let mounted = true;
       setError(null);
       setMDXContent(null);
+      setCurrentBlogPost(null);
+
+      // Fetch blog post metadata for recommended posts
+      fetch(`/api/blog/${blogSlug}`)
+        .then((res) => res.json())
+        .then((post: BlogPost) => {
+          if (mounted) setCurrentBlogPost(post);
+        })
+        .catch((err) => {
+          console.error("Error fetching blog post metadata:", err);
+        });
 
       const loader = blogLoaders[blogSlug];
       if (!loader) {
@@ -110,6 +125,53 @@ export default function LocaleContentPage() {
     };
   }, [targetEntry, isBlogRoute, slugParts]);
 
+  // Handle scrolling to anchor links when page loads with a hash
+  useEffect(() => {
+    // Wait for content to be loaded and rendered
+    if (!MDXContent && !error) return;
+
+    const handleHashScroll = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        // Remove the # from the hash
+        const id = hash.substring(1);
+        
+        // Try to find the element, with retries to account for async rendering
+        const findAndScroll = (attempts = 0) => {
+          const element = document.getElementById(id);
+          
+          if (element) {
+            // Account for fixed navbar (56px height)
+            const navbarHeight = 56;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          } else if (attempts < 10) {
+            // Retry a few times in case content is still rendering
+            setTimeout(() => findAndScroll(attempts + 1), 100);
+          }
+        };
+
+        findAndScroll();
+      }
+    };
+
+    // Delay to ensure DOM is fully rendered after content loads
+    const timer = setTimeout(handleHashScroll, 300);
+    
+    // Also handle hash changes (e.g., when clicking anchor links on the same page)
+    window.addEventListener('hashchange', handleHashScroll);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('hashchange', handleHashScroll);
+    };
+  }, [MDXContent, error, pathname]);
+
   // Handle blog index page
   if (isBlogRoute && slugParts.length === 1) {
     return (
@@ -158,9 +220,14 @@ export default function LocaleContentPage() {
             {error && <p className="text-red-500">{error}</p>}
             {!error && !MDXContent && <p className="text-gray-500">Loading...</p>}
             {!error && MDXContent && (
-              <MDXProvider components={mdxComponents}>
-                <MDXContent />
-              </MDXProvider>
+              <>
+                <MDXProvider components={mdxComponents}>
+                  <MDXContent />
+                </MDXProvider>
+                {isBlogRoute && currentBlogPost?.recommend && currentBlogPost.recommend.length > 0 && (
+                  <RecommendedPosts recommendPaths={currentBlogPost.recommend} />
+                )}
+              </>
             )}
           </main>
           {/* Desktop: Language selector on the right */}

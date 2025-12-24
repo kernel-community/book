@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-blog-loaders.js && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:blog-loaders": "node scripts/build-blog-loaders.js"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
