@@ -471,7 +471,7 @@ export const fellows: Array<Fellow> = [
 // Component for rendering a single Fellow
 const FellowCard = ({ fellow }: { fellow: Fellow }) => {
   return (
-    <a className="flex flex-col gap-2 h-[221px] w-[112px] ml-3" href={fellow.url ?? ""} target="_blank" rel="noopener noreferrer">
+    <a className="flex flex-col gap-2 h-[221px] w-[112px] flex-shrink-0" href={fellow.url ?? ""} target="_blank" rel="noopener noreferrer">
       {/* image */}
       <div className="rounded-lg relative h-[112px] w-[112px]">
         {fellow.image}
@@ -492,7 +492,7 @@ const FellowCard = ({ fellow }: { fellow: Fellow }) => {
 // Component for rendering all Fellows
 export const Fellows = () => {
   return (
-    <div className="w-full max-w-full overflow-x-auto overflow-y-hidden">
+    <div className="w-full max-w-full overflow-x-auto overflow-y-hidden -mx-6 px-6">
       <div className="grid grid-rows-2 grid-flow-col gap-6 sm:gap-16 min-w-max">
         {fellows.map((fellow, key) => (
           <FellowCard fellow={fellow} key={key} />
@@ -515,7 +515,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   }
 
   return (
-    <a className="h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] border-[1px] border-slate-200 flex flex-col rounded-lg m-3 cursor-pointer" href={project.url} target="_blank" rel="noopener noreferrer">
+    <a className="h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] border-[1px] border-slate-200 flex flex-col rounded-lg flex-shrink-0 cursor-pointer" href={project.url} target="_blank" rel="noopener noreferrer">
       <div className="relative min-h-[40%]">
         {project.projectImage}
       </div>
@@ -539,8 +539,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
 // Component for rendering all Projects
 export const Projects = () => {
   return (
-    <div className="w-full max-w-full overflow-x-auto overflow-y-hidden">
-      <div className="flex flex-row gap-6 px-3 min-w-max">
+    <div className="w-full max-w-full overflow-x-auto overflow-y-hidden -mx-6 px-6">
+      <div className="flex flex-row gap-6 min-w-max">
         {projects.map((proj, key) => (
           <ProjectCard project={proj} key={key} />
         ))}

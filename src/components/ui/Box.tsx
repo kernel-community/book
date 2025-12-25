@@ -121,6 +121,8 @@ const sxToTailwind = (sx: Record<string, unknown>): string => {
     if (key === "bg" || key === "backgroundColor") {
       if (value === "primary" || value === "primaryMuted") {
         classes.push("bg-[#4B5B33]");
+        classes.push("text-white");
+        classes.push("chocolate-box");
       }
     }
 

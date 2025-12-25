@@ -129,6 +129,7 @@ body {
 .prose a[class*="inline-flex"][class*="items-center"],
 .prose a[class*="font-bold"][class*="rounded-full"] {
   text-decoration: none !important;
+  font-weight: normal !important;
 }
 
 /* Headings inside boxes with green background should have white text */
@@ -192,4 +193,76 @@ aside details summary::marker {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+/* Chocolate box styling - green background, white text, proper spacing */
+.prose .chocolate-box {
+  background-color: #4B5B33 !important;
+  color: white !important;
+  padding: 1.5rem !important;
+  border-radius: 0.75rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.prose .chocolate-box * {
+  color: white !important;
+}
+
+.prose .chocolate-box .flex {
+  flex-direction: column !important;
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+  gap: 0.5rem !important;
+  display: flex !important;
+  min-height: 100% !important;
+}
+
+/* Reduce margins between headings and text, and text and buttons */
+.prose .chocolate-box .flex h1,
+.prose .chocolate-box .flex h2,
+.prose .chocolate-box .flex h3,
+.prose .chocolate-box .flex h4,
+.prose .chocolate-box .flex h5,
+.prose .chocolate-box .flex h6,
+.prose .chocolate-box .flex strong {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.prose .chocolate-box .flex p {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.prose .chocolate-box .flex em {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.prose .chocolate-box .flex a[class*="rounded-full"],
+.prose .chocolate-box .flex button[class*="rounded-full"],
+.prose .chocolate-box a[class*="rounded-full"],
+.prose .chocolate-box button[class*="rounded-full"] {
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
+  position: relative !important;
+  bottom: auto !important;
+  /* Button styling: 1px solid white border, centered text, transparent background, bold text */
+  border: 1px solid white !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  text-align: center !important;
+  justify-content: center !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* Override hover states for buttons in chocolate boxes */
+.prose .chocolate-box .flex a[class*="rounded-full"]:hover,
+.prose .chocolate-box .flex button[class*="rounded-full"]:hover,
+.prose .chocolate-box a[class*="rounded-full"]:hover,
+.prose .chocolate-box button[class*="rounded-full"]:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
 }
