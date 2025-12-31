@@ -10,6 +10,9 @@
     "build:blog-loaders": "node scripts/build-blog-loaders.js"
   },
   "dependencies": {
+    "@aa-sdk/core": "^4.61.0",
+    "@account-kit/infra": "^4.61.0",
+    "@account-kit/wallet-client": "^4.61.0",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/mdx": "^16.1.1",

@@ -4,6 +4,8 @@ import { WagmiProvider, http } from 'wagmi'
 import { optimism } from 'wagmi/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { RainbowKitProvider, getDefaultConfig, lightTheme } from '@rainbow-me/rainbowkit'
+import { useAccount } from 'wagmi'
+import { SmartAccountProvider } from '@/components/honour/SmartAccountProvider'
 
 const config = getDefaultConfig({
   appName: 'Kernel Community',
@@ -23,12 +25,23 @@ const customTheme = lightTheme({
   fontStack: 'system',
 })
 
+function SmartAccountWrapper({ children }: { children: React.ReactNode }) {
+  const { address } = useAccount()
+  return (
+    <SmartAccountProvider eoaAddress={address}>
+      {children}
+    </SmartAccountProvider>
+  )
+}
+
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider theme={customTheme}>
-          {children}
+          <SmartAccountWrapper>
+            {children}
+          </SmartAccountWrapper>
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useAccount, useChainId, useSwitchChain, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
-import { optimism as optimismChain } from "wagmi/chains";
+import { useAccount } from "wagmi";
 import ConnectButton from "./ConnectButton";
 import { HON_CONTRACT_ADDRESS, HON_ABI, proposer, apiUrl, graphUrl, graphApiToken } from "@/lib/honour";
+import { useSmartAccount } from "./SmartAccountProvider";
+import { encodeFunctionData } from "viem";
+import { getPaymasterCapabilities } from "@/utils/alchemyConfig";
 import { X, Loader2 } from "lucide-react";
 
 type GetHonModalProps = {
@@ -19,16 +21,12 @@ const GetHonModal = ({
   onTransactionSuccess,
 }: GetHonModalProps) => {
   const { address, isConnected } = useAccount();
-  const chainId = useChainId();
-  const { switchChain } = useSwitchChain();
+  const { smartAccountClient, smartAccountAddress, isInitialized } = useSmartAccount();
   const [step, setStep] = useState<"propose" | "accept">("propose");
   const [error, setError] = useState<string | null>(null);
   const [isProposing, setIsProposing] = useState(false);
-
-  const { writeContract, data: hash, isPending: isAccepting } = useWriteContract();
-  const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
-    hash,
-  });
+  const [isConfirming, setIsConfirming] = useState(false);
+  const [isConfirmed, setIsConfirmed] = useState(false);
 
   // Reset state when modal opens/closes
   useEffect(() => {
@@ -36,17 +34,10 @@ const GetHonModal = ({
       setStep("propose");
       setError(null);
       setIsProposing(false);
+      setIsConfirming(false);
+      setIsConfirmed(false);
     }
   }, [isVisible]);
-
-  // Update isProposing when transaction is pending
-  useEffect(() => {
-    if (isAccepting || isConfirming) {
-      setIsProposing(true);
-    } else if (isConfirmed) {
-      setIsProposing(false);
-    }
-  }, [isAccepting, isConfirming, isConfirmed]);
 
   // Handle transaction success
   useEffect(() => {
@@ -61,20 +52,9 @@ const GetHonModal = ({
 
   if (!isVisible) return null;
 
-  const handleSwitchNetwork = async () => {
-    try {
-      await switchChain({ chainId: optimismChain.id });
-    } catch (err) {
-      console.error("Error switching network:", err);
-      setError("Failed to switch network. Please switch to Optimism manually.");
-    }
-  };
-
-  const isOnOptimism = chainId === optimismChain.id;
-
-  // Query subgraph for proposal IDs (matching old implementation)
+  // Query subgraph for proposal IDs using smart account address
   const getProposalId = async (): Promise<string | null> => {
-    if (!address) return null;
+    if (!smartAccountAddress) return null;
 
     let proposalId: string | null = null;
     let retryCount = 0;
@@ -108,7 +88,7 @@ const GetHonModal = ({
           body: JSON.stringify({
             query,
             variables: {
-              account: address,
+              account: smartAccountAddress,
             },
           }),
         });
@@ -139,21 +119,24 @@ const GetHonModal = ({
     return proposalId;
   };
 
-  // Call API to propose HON
+  // Call API to propose HON using smart account address
   const handlePropose = async () => {
-    if (!address || !isOnOptimism) return;
+    if (!smartAccountAddress || !isInitialized) {
+      setError("Smart account not initialized. Please wait...");
+      return;
+    }
 
     setIsProposing(true);
     setError(null);
 
     try {
-      // API expects headers, not body (matching the old implementation)
+      // API expects headers, not body - use smart account address
       const response = await fetch(apiUrl, {
         method: "POST",
         mode: "cors",
         headers: {
           amount: "1",
-          address: address,
+          address: smartAccountAddress,
         },
       });
 
@@ -171,16 +154,17 @@ const GetHonModal = ({
     }
   };
 
-  // Accept the proposal (using honour function like the old implementation)
+  // Accept the proposal using smart account (sponsored transaction)
   const handleAccept = async () => {
-    if (!address || !isOnOptimism) {
-      setError("Please ensure you're on Optimism network");
+    if (!smartAccountClient || !smartAccountAddress || !isInitialized) {
+      setError("Smart account not initialized. Please wait...");
       return;
     }
 
     try {
       setError(null);
       setIsProposing(true);
+      setIsConfirming(false);
       
       // Get proposal ID first
       const id = await getProposalId();
@@ -191,18 +175,76 @@ const GetHonModal = ({
         return;
       }
 
-      // Call honour function (not accept) - matching old implementation
-      await writeContract({
-        address: HON_CONTRACT_ADDRESS as `0x${string}`,
+      // Get paymaster capabilities from API route (keeps policy ID secret)
+      const paymasterCapabilities = await getPaymasterCapabilities();
+      
+      if (!paymasterCapabilities) {
+        setError("Gas sponsorship policy not configured. Please contact support.");
+        setIsProposing(false);
+        return;
+      }
+
+      // Encode the honour function call
+      const callData = encodeFunctionData({
         abi: HON_ABI,
         functionName: "honour",
         args: [proposer as `0x${string}`, BigInt(id)],
-        chainId: optimismChain.id,
       });
+
+      // Use sendCalls which handles prepare, sign, and send in one call
+      // The client already has the account configured
+      setIsConfirming(true);
+      const result = await smartAccountClient.sendCalls({
+        calls: [{
+          to: HON_CONTRACT_ADDRESS as `0x${string}`,
+          value: '0x0',
+          data: callData as `0x${string}`
+        }],
+        capabilities: paymasterCapabilities
+      });
+      
+      const callId = result.preparedCallIds?.[0] || result.ids?.[0];
+      
+      if (!callId) {
+        throw new Error('No call ID returned from sendCalls');
+      }
+      
+      // Poll for status 200 (confirmed) to get the transaction hash
+      let txHash: string | null = null;
+      let attempts = 0;
+      const maxAttempts = 60;
+      
+      while (!txHash && attempts < maxAttempts) {
+        const status: any = await smartAccountClient.getCallsStatus(callId);
+        
+        if (status.status === 200) {
+          txHash = status.details?.data?.hash;
+          if (txHash) {
+            break;
+          }
+        }
+        
+        if (status.status === 'FAILED' || status.error || (typeof status.status === 'number' && status.status >= 400)) {
+          throw new Error(status.error || status.message || 'Transaction failed');
+        }
+        
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        attempts++;
+      }
+      
+      if (!txHash) {
+        throw new Error(`Transaction hash not found after ${maxAttempts} seconds`);
+      }
+      
+      // Transaction is confirmed (status 200), so we're done
+      setIsConfirmed(true);
+      setIsProposing(false);
+      setIsConfirming(false);
     } catch (err) {
       console.error("Error accepting proposal:", err);
       setError(err instanceof Error ? err.message : "Failed to accept proposal");
       setIsProposing(false);
+      setIsConfirming(false);
     }
   };
 
@@ -228,23 +270,20 @@ const GetHonModal = ({
         {!isConnected ? (
           <div className="space-y-4">
             <p className="text-gray-700">
-              Connect your wallet to get HON tokens on Optimism.
+              Connect your wallet to get HON tokens. We'll create a smart account for you on Optimism.
             </p>
             <div className="flex justify-center">
               <ConnectButton />
             </div>
           </div>
-        ) : !isOnOptimism ? (
+        ) : !isInitialized ? (
           <div className="space-y-4">
             <p className="text-gray-700">
-              Please switch to Optimism network to get HON tokens.
+              Setting up your smart account on Optimism...
             </p>
-            <button
-              onClick={handleSwitchNetwork}
-              className="w-full bg-[#4B5B33] text-white px-4 py-2 rounded-lg font-bold hover:bg-opacity-90 transition-colors"
-            >
-              Switch to Optimism
-            </button>
+            <div className="flex justify-center">
+              <Loader2 className="w-6 h-6 animate-spin text-[#4B5B33]" />
+            </div>
           </div>
         ) : (
           <div className="space-y-4">
@@ -287,13 +326,13 @@ const GetHonModal = ({
                 )}
                 <button
                   onClick={handleAccept}
-                  disabled={isProposing || isAccepting || isConfirming}
+                  disabled={isProposing || isConfirming}
                   className="w-full bg-[#4B5B33] text-white px-4 py-2 rounded-lg font-bold hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
-                  {isProposing || isAccepting || isConfirming ? (
+                  {isProposing || isConfirming ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin" />
-                      {isConfirming ? "Confirming..." : isAccepting ? "Accepting..." : "Loading..."}
+                      {isConfirming ? "Confirming..." : "Loading..."}
                     </>
                   ) : (
                     "Honour"
