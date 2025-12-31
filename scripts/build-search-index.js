@@ -99,3 +99,4 @@ fs.writeFileSync(OUTPUT_PATH, JSON.stringify(searchIndex, null, 2));
 
 console.log(`Built search index with ${searchIndex.length} entries`);
 
+

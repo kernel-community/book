@@ -28,3 +28,4 @@ export default function Heading({ level = 1, ...props }: HeadingProps) {
   }
 }
 
+
