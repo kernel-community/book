@@ -20,7 +20,7 @@ const GetHonModal = ({
   onClose,
   onTransactionSuccess,
 }: GetHonModalProps) => {
-  const { address, isConnected } = useAccount();
+  const { isConnected } = useAccount();
   const { smartAccountClient, smartAccountAddress, isInitialized } = useSmartAccount();
   const [step, setStep] = useState<"propose" | "accept">("propose");
   const [error, setError] = useState<string | null>(null);
@@ -215,10 +215,19 @@ const GetHonModal = ({
       const maxAttempts = 60;
       
       while (!txHash && attempts < maxAttempts) {
-        const status: any = await smartAccountClient.getCallsStatus(callId);
+        const status = await smartAccountClient.getCallsStatus(callId) as {
+          status?: number | string;
+          error?: string;
+          message?: string;
+          details?: {
+            data?: {
+              hash?: string;
+            };
+          };
+        };
         
         if (status.status === 200) {
-          txHash = status.details?.data?.hash;
+          txHash = status.details?.data?.hash ?? null;
           if (txHash) {
             break;
           }
@@ -270,7 +279,7 @@ const GetHonModal = ({
         {!isConnected ? (
           <div className="space-y-4">
             <p className="text-gray-700">
-              Connect your wallet to get HON tokens. We'll create a smart account for you on Optimism.
+              Connect your wallet to get HON tokens. We&apos;ll create a smart account for you on Optimism.
             </p>
             <div className="flex justify-center">
               <ConnectButton />

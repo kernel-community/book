@@ -8,8 +8,11 @@ import { createWalletClient, custom } from 'viem'
 import { optimism as optimismViem } from 'viem/chains'
 import { getAlchemyApiKey } from '@/utils/alchemyConfig'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type SmartWalletClientType = any;
+
 interface SmartAccountContextType {
-  smartAccountClient: any | null
+  smartAccountClient: SmartWalletClientType | null
   smartAccountAddress: string | null
   isInitialized: boolean
   initializeSmartAccount: () => Promise<void>
@@ -37,7 +40,7 @@ interface SmartAccountProviderProps {
 }
 
 export const SmartAccountProvider = ({ children, eoaAddress }: SmartAccountProviderProps) => {
-  const [smartAccountClient, setSmartAccountClient] = useState<any | null>(null)
+  const [smartAccountClient, setSmartAccountClient] = useState<SmartWalletClientType | null>(null)
   const [smartAccountAddress, setSmartAccountAddress] = useState<string | null>(null)
   const [isInitialized, setIsInitialized] = useState(false)
 
@@ -128,11 +131,12 @@ export const SmartAccountProvider = ({ children, eoaAddress }: SmartAccountProvi
         if (!isMounted) return
         try {
           await initializeSmartAccount()
-        } catch (error: any) {
+        } catch (error: unknown) {
           // Silently catch any errors to prevent breaking the app
           if (isMounted) {
             // Only log if it's not a configuration issue
-            if (error.message && !error.message.includes('apiKey') && !error.message.includes('Required')) {
+            const errorMessage = error instanceof Error ? error.message : String(error);
+            if (errorMessage && !errorMessage.includes('apiKey') && !errorMessage.includes('Required')) {
               console.error('SmartAccount initialization error (non-blocking):', error)
             }
           }
