@@ -7,6 +7,7 @@ import DocNavbar from "@/components/nav/DocNavbar";
 import Sidenav from "@/components/nav/Sidenav";
 import Footer from "@/components/Footer";
 import LanguageSelector from "@/components/nav/LanguageSelector";
+import TableOfContents from "@/components/nav/TableOfContents";
 import BlogIndex from "@/components/blog/BlogIndex";
 import RecommendedPosts from "@/components/blog/RecommendedPosts";
 import contentIndex from "@/data/content-index.json";
@@ -230,13 +231,14 @@ export default function LocaleContentPage() {
               </>
             )}
           </main>
-          {/* Desktop: Language selector on the right */}
+          {/* Desktop: Language selector and Table of Contents on the right */}
           {!isBlogRoute && (
-            <aside className="hidden md:block w-64 flex-shrink-0 pt-8 pr-6">
+            <aside className="hidden md:block w-64 flex-shrink-0 pt-8 pr-6 space-y-6">
               <LanguageSelector
                 currentPath={activePath}
                 currentLocale={locale}
               />
+              <TableOfContents />
             </aside>
           )}
         </div>
