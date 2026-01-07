@@ -3,6 +3,7 @@ import "./globals.css";
 import { Libre_Franklin } from 'next/font/google'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Providers } from './providers'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const libreFranklin = Libre_Franklin({
   subsets: ['latin'],
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
