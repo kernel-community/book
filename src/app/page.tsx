@@ -117,7 +117,7 @@ const FirstFold = () => {
             Kernel is about building, through repeated interactions with peers, the patterns required for a better web.
           </div>
           <div className="text-base md:text-lg mt-6">
-            Kernel curates fellows — technologists, artists, engineers, researchers, designers, linguists — who are building or researching something novel.
+            Kernel is a gathering of fellows — technologists, artists, engineers, researchers, designers, linguists — who are building or researching something novel.
           </div>
           <div className="text-base md:text-lg mt-6">
           Our current block, KB12, is coming together now. Apply and hear back in two weeks.

@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kernel Community
 
-## Getting Started
+Kernel is an ongoing invitation into conversation with your peers.
 
-First, run the development server:
+Kernel is about building, through repeated interactions with peers, the patterns required for a better web.
+
+Kernel is a gathering of fellows — technologists, artists, engineers, researchers, designers, linguists — who are building or researching something novel.
+
+Kernel is a peer-to-peer learning environment dedicated to the journey towards a better understanding of truth: in our work, in our relationships with others, and in our inner worlds.
+
+We aim to change the way we think of contributing and the kinds of projects to which we contribute. Kernel is about humility, honesty, gratitude, and intentional service.
+
+1. We are humble because, through our curiosity, our creativity, our suffering, our joy we have come to know and embody how little any one person can know in isolation.
+2. We are honest because it is the most courageous way to live, the straightest path from head to heart, and the means of connecting them permanently.
+3. We are grateful because there is no other choice. Any examined life can only ever lead, in the final analysis, to gratitude beyond reason or measure.
+4. Our intention is to serve, because it brings us back - again and again - to humility.
+5. We are patient, because planting a seed is not enough: the kernel will only sacrifice itself and become a forest in the right season.
+
+## Contributing
+
+This is a standard nextjs website, served via vercel. Clone the repo, install the dependencies, and get going.
 
 ```bash
+git clone git@github.com:kernel-community/book.git
+cd book
+npm i
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
