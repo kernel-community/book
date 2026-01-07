@@ -86,7 +86,7 @@ const Button = ({children, type, href}: {children: ReactElement, type:"primary" 
 
   if (type === "secondary") {
     return (
-      <a className="border-2 border-[#4B5B33] px-[12px] py-[10px] rounded-full w-full sm:w-auto cursor-pointer hover:bg-[#4B5B33]/30 transition-all ease-in delay-100" href={href} target="_blank">
+      <a className="border-2 border-[#4B5B33] px-[12px] py-[10px] rounded-full w-full sm:w-auto cursor-pointer hover:bg-[#4B5B33]/30 transition-all ease-in delay-100" href={href}>
         {children}
       </a>
     )
@@ -117,7 +117,7 @@ const FirstFold = () => {
             Kernel is about building, through repeated interactions with peers, the patterns required for a better web.
           </div>
           <div className="text-base md:text-lg mt-6">
-            Kernel serves up to 150 Kernel fellows — technologists, artists, engineers, researchers, designers, linguists — who each are building or researching something novel.
+            Kernel curates fellows — technologists, artists, engineers, researchers, designers, linguists — who are building or researching something novel.
           </div>
           <div className="text-base md:text-lg mt-6">
           Our current block, KB12, is coming together now. Apply and hear back in two weeks.
@@ -128,7 +128,7 @@ const FirstFold = () => {
                 Apply to Kernel <MoveRight />
               </>
             </Button>
-            <Button type="secondary" href="https://read.kernel.community/en/learn/">
+            <Button type="secondary" href="/en/start/">
               <>
                 Read the Book
               </>
