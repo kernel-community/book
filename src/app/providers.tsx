@@ -9,7 +9,7 @@ import { SmartAccountProvider } from '@/components/honour/SmartAccountProvider'
 
 const config = getDefaultConfig({
   appName: 'Kernel Community',
-  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '',
+  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'dummy-project-id',
   chains: [optimism],
   transports: {
     [optimism.id]: http(),  

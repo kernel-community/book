@@ -4,10 +4,6 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
-    rehypePlugins: [],
-  },
 });
 
 /** @type {import('next').NextConfig} */

@@ -3,10 +3,11 @@ import { getBlogPostBySlug } from "@/utils/blog";
 
 export async function GET(
   request: Request,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const post = getBlogPostBySlug(params.slug);
+    const { slug } = await params;
+    const post = getBlogPostBySlug(slug);
     if (!post) {
       return NextResponse.json(
         { error: "Blog post not found" },
