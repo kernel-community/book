@@ -37,7 +37,7 @@ export function middleware(request: NextRequest) {
   const pathSegments = pathname.split("/").filter(Boolean);
   const hasLocale = pathSegments[0]?.length === 2; // e.g. /en/...
 
-  if (!hasLocale) {
+  if (!hasLocale && pathname !== "/") {
     const country = request.headers.get("x-vercel-ip-country") || request.cookies.get("locale")?.value;
     const locale = getLocaleFromCountry(country);
 

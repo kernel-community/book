@@ -4,6 +4,10 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 
 const withMDX = createMDX({
   extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: ['remark-frontmatter', 'remark-mdx-frontmatter'],
+    rehypePlugins: [],
+  },
 });
 
 /** @type {import('next').NextConfig} */
@@ -32,7 +36,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname:"kbx-landing.vercel.app",
+        hostname:"kernel.community",
       }
     ]
   },
